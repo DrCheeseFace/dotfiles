@@ -22,6 +22,22 @@ return require('packer').startup(function(use)
   use 'hrsh7th/nvim-cmp'
   use 'wbthomason/packer.nvim'
   use {'VonHeikemen/lsp-zero.nvim'}
+  local lsp_zero = require('lsp-zero')
+
+  lsp_zero.on_attach(function(client, bufnr)
+      -- see :help lsp-zero-keybindings
+      -- to learn the available actions
+      lsp_zero.default_keymaps({buffer = bufnr})
+  end)
+
+  -- see :help lsp-zero-guide:integrate-with-mason-nvim
+  -- to learn how to use mason.nvim with lsp-zero
+  require('mason').setup({})
+  require('mason-lspconfig').setup({
+      handlers = {
+          lsp_zero.default_setup,
+      }
+  })
 
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.4',
