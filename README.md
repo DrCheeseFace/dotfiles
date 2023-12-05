@@ -26,7 +26,6 @@ The plugins I use in my neovim config
 | [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets)         | Collection of pre-configured snippets       |
 | [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)                       | Configuration for built-in LSP              |
 | [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)                                 | Autocompletion plugin                       |
-| [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim)                     | Plugin manager                              |
 
 
 
@@ -68,8 +67,7 @@ My custom keybindings for neovim
 | n    | `<C-p>`      | Open a fuzzy finder for Git-tracked files in the project |
 | n    | `<leader>ps` | Grep for a string in the project (user-inputted string)  |
 
-### AutoCompletion Keybindings 
-
+### LSP Keybindings 
 | Key Combination | Functionality                                      |
 | --------------- | -------------------------------------------------- |
 | `<C-down>`      | Select next completion item                        |
@@ -78,6 +76,20 @@ My custom keybindings for neovim
 | `<CR>`          | Confirm and replace with selected item             |
 | `<Tab>`         | Expand snippet or jump to the next completion item |
 | `<S-Tab>`       | Jump to the previous completion item               |
+| `K`             | Hover info about symbol under cursor.              |
+| `gd`            | Jump to symbol definition.                         |
+| `gD`            | Jump to symbol declaration.                        |
+| `gi`            | List symbol implementations in quickfix.           |
+| `go`            | Jump to type definition.                           |
+| `gr`            | List symbol references in quickfix.                |
+| `gs`            | Show signature info in floating window.            |
+| `<F2>`          | Rename all symbol references.                      |
+| `<F3>`          | Format code in current buffer.                     |
+| `<F4>`          | Select code action at cursor.                      |
+| `gl`            | Show diagnostics in floating window.               |
+| `[d`            | Move to previous diagnostic.                       |
+| `]d`            | Move to next diagnostic.                           |
+
 
 
 <br></br>
