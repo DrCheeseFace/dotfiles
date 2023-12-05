@@ -20,6 +20,14 @@ The plugins I use in my neovim config
 | [`numToStr/Comment.nvim`](https://github.com/numToStr/Comment.nvim)                     | Commenting plugin                           |
 | [`vim-airline/vim-airline`](https://github.com/vim-airline/vim-airline)                 | Statusline                                  |
 | [`vim-airline/vim-airline-themes`](https://github.com/vim-airline/vim-airline-themes)   | Themes for vim-airline                      |
+| [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)                                 | Snippet engine for Neovim in Lua            |
+| [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)                 | LuaSnip source for nvim-cmp                 |
+| [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)                         | LSP source for nvim-cmp                     |
+| [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets)         | Collection of pre-configured snippets       |
+| [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)                       | Configuration for built-in LSP              |
+| [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)                                 | Autocompletion plugin                       |
+| [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim)                     | Plugin manager                              |
+
 
 
 <br></br>
@@ -59,6 +67,18 @@ My custom keybindings for neovim
 | n    | `<leader>pf` | Open a fuzzy finder for files in the project             |
 | n    | `<C-p>`      | Open a fuzzy finder for Git-tracked files in the project |
 | n    | `<leader>ps` | Grep for a string in the project (user-inputted string)  |
+
+### AutoCompletion Keybindings 
+
+| Key Combination | Functionality                                      |
+| --------------- | -------------------------------------------------- |
+| `<C-down>`      | Select next completion item                        |
+| `<C-up>`        | Select previous completion item                    |
+| `<C-Space>`     | Trigger completion                                 |
+| `<CR>`          | Confirm and replace with selected item             |
+| `<Tab>`         | Expand snippet or jump to the next completion item |
+| `<S-Tab>`       | Jump to the previous completion item               |
+
 
 <br></br>
 
