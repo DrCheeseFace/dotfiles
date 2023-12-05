@@ -26,6 +26,9 @@ The plugins I use in my neovim config
 | [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets)         | Collection of pre-configured snippets       |
 | [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)                       | Configuration for built-in LSP              |
 | [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)                                 | Autocompletion plugin                       |
+<<<<<<< HEAD
+=======
+>>>>>>> db2a8f1792b4ca69bd139254ed61c5675bd31b60
 
 
 
