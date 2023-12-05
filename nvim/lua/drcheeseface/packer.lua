@@ -21,6 +21,8 @@ return require('packer').startup(function(use)
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'
   use 'wbthomason/packer.nvim'
+  use {'VonHeikemen/lsp-zero.nvim'}
+
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.4',
 	  -- or                            , branch = '0.1.x',
