@@ -26,9 +26,6 @@ The plugins I use in my neovim config
 | [rafamadriz/friendly-snippets](https://github.com/rafamadriz/friendly-snippets)         | Collection of pre-configured snippets       |
 | [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)                       | Configuration for built-in LSP              |
 | [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)                                 | Autocompletion plugin                       |
-<<<<<<< HEAD
-=======
->>>>>>> db2a8f1792b4ca69bd139254ed61c5675bd31b60
 
 
 
@@ -71,27 +68,25 @@ My custom keybindings for neovim
 | n    | `<leader>ps` | Grep for a string in the project (user-inputted string)  |
 
 ### LSP Keybindings 
-| Key Combination | Functionality                                      |
-| --------------- | -------------------------------------------------- |
-| `<C-down>`      | Select next completion item                        |
-| `<C-up>`        | Select previous completion item                    |
-| `<C-Space>`     | Trigger completion                                 |
-| `<CR>`          | Confirm and replace with selected item             |
-| `<Tab>`         | Expand snippet or jump to the next completion item |
-| `<S-Tab>`       | Jump to the previous completion item               |
-| `K`             | Hover info about symbol under cursor.              |
-| `gd`            | Jump to symbol definition.                         |
-| `gD`            | Jump to symbol declaration.                        |
-| `gi`            | List symbol implementations in quickfix.           |
-| `go`            | Jump to type definition.                           |
-| `gr`            | List symbol references in quickfix.                |
-| `gs`            | Show signature info in floating window.            |
-| `<F2>`          | Rename all symbol references.                      |
-| `<F3>`          | Format code in current buffer.                     |
-| `<F4>`          | Select code action at cursor.                      |
-| `gl`            | Show diagnostics in floating window.               |
-| `[d`            | Move to previous diagnostic.                       |
-| `]d`            | Move to next diagnostic.                           |
+
+| Mode | Key Binding      | Function Description                            |
+|------|------------------|-------------------------------------------------|
+|  n   | `gd`             | Go to definition                                |
+|  n   | `K`              | Show hover information                          |
+|  n   | `<leader>vws`    | Workspace symbol search                         |
+|  n   | `<leader>vd`     | Open diagnostic float window                    |
+|  n   | `[d`             | Go to next diagnostic                           |
+|  n   | `]d`             | Go to previous diagnostic                       |
+|  n   | `<leader>vca`    | Show code actions                               |
+|  n   | `<leader>vrr`    | List references for symbol                      |
+|  n   | `<leader>vrn`    | Rename symbol                                   |
+|  n   | `<C-h>`          | Show signature help in insert mode              |
+|  n   | `<C-up>`         | Navigate to previous completion item            |
+|  n   | `<C-down>`       | Navigate to next completion item                |
+|  n   | `<C-y>`          | Confirm and select completion suggestion        |
+|  n   | `<C-Space>`      | Trigger autocompletion                          |
+
+
 
 
 
