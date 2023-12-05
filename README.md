@@ -5,21 +5,22 @@
 ## Vim
 
 The plugins I use in my neovim config
-| Plugin | Description |
-|------------------------------------------|---------------------------------------------------|
-| [`rose-pine/neovim`](https://github.com/rose-pine/neovim) | Rose Pine colorscheme for Neovim |
-| [`wbthomason/packer.nvim`](https://github.com/wbthomason/packer.nvim) | Plugin manager for Neovim |
-| [`nvim-telescope/telescope.nvim`](https://github.com/nvim-telescope/telescope.nvim) | Fuzzy finder for Neovim |
-| [`nvim-treesitter/nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter) | Syntax tree sitter for Neovim |
-| [`nvim-lua/plenary.nvim`](https://github.com/nvim-lua/plenary.nvim) | Plenary library (required for some plugins) |
-| [`ThePrimeagen/harpoon`](https://github.com/ThePrimeagen/harpoon) | Project navigation for Neovim |
-| [`mbbill/undotree`](https://github.com/mbbill/undotree) | Visualize undo history in a tree format |
-| [`tpope/vim-fugitive`](https://github.com/tpope/vim-fugitive) | Git integration for Neovim |
-| [`williamboman/mason.nvim`](https://github.com/williamboman/mason.nvim) | File templates and snippets for Neovim |
-| [`windwp/nvim-autopairs`](https://github.com/windwp/nvim-autopairs) | Autopairs for Neovim |
-| [`numToStr/Comment.nvim`](https://github.com/numToStr/Comment.nvim) | Commenting plugin for Neovim |
-| [`vim-airline/vim-airline`](https://github.com/vim-airline/vim-airline) | Statusline for Neovim |
-| [`vim-airline/vim-airline-themes`](https://github.com/vim-airline/vim-airline-themes) | Themes for vim-airline |
+| Plugin                                                                                  | Description                                 |
+| --------------------------------------------------------------------------------------- | ------------------------------------------- |
+| [`rose-pine/neovim`](https://github.com/rose-pine/neovim)                               | Rose Pine colorscheme                       |
+| [`wbthomason/packer.nvim`](https://github.com/wbthomason/packer.nvim)                   | Plugin manager                              |
+| [`nvim-telescope/telescope.nvim`](https://github.com/nvim-telescope/telescope.nvim)     | Fuzzy finder                                |
+| [`nvim-treesitter/nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter) | Syntax tree sitter                          |
+| [`nvim-lua/plenary.nvim`](https://github.com/nvim-lua/plenary.nvim)                     | Plenary library (required for some plugins) |
+| [`ThePrimeagen/harpoon`](https://github.com/ThePrimeagen/harpoon)                       | Project navigation                          |
+| [`mbbill/undotree`](https://github.com/mbbill/undotree)                                 | Visualize undo history in a tree format     |
+| [`tpope/vim-fugitive`](https://github.com/tpope/vim-fugitive)                           | Git integration                             |
+| [`williamboman/mason.nvim`](https://github.com/williamboman/mason.nvim)                 | Portable package manager                    |
+| [`windwp/nvim-autopairs`](https://github.com/windwp/nvim-autopairs)                     | Autopairs                                   |
+| [`numToStr/Comment.nvim`](https://github.com/numToStr/Comment.nvim)                     | Commenting plugin                           |
+| [`vim-airline/vim-airline`](https://github.com/vim-airline/vim-airline)                 | Statusline                                  |
+| [`vim-airline/vim-airline-themes`](https://github.com/vim-airline/vim-airline-themes)   | Themes for vim-airline                      |
+
 
 <br></br>
 My custom keybindings for neovim
@@ -39,7 +40,7 @@ My custom keybindings for neovim
 
 | Mode | Key Binding  | Functionality                                                 |
 | ---- | ------------ | ------------------------------------------------------------- |
-| n    | `<leader>pv` | Execute `vim.cmd.Ex`                                          |
+| n    | `<leader>pv` | Execute `vim.cmd.Ex` (show integrated neovim navigation       |
 | n    | `<C-d>`      | Scroll half a screen down and reposition cursor to the center |
 | n    | `<C-u>`      | Scroll half a screen up and reposition cursor to the center   |
 | v    | `J`          | Move selected lines down                                      |
