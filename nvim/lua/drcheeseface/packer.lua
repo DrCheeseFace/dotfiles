@@ -3,6 +3,7 @@
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
+
 return require('packer').startup(function(use)
   -- Packer can manage itself
   require('packer').startup(function(use)
@@ -13,6 +14,12 @@ return require('packer').startup(function(use)
 	})
 
   end)
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'rafamadriz/friendly-snippets'
+  use 'neovim/nvim-lspconfig'
+  use 'hrsh7th/nvim-cmp'
   use 'wbthomason/packer.nvim'
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.4',
@@ -25,6 +32,7 @@ return require('packer').startup(function(use)
   use {"mbbill/undotree"}
   use {"tpope/vim-fugitive"}
   use {"williamboman/mason.nvim"}
+  use 'williamboman/mason-lspconfig.nvim'
   use {
       "windwp/nvim-autopairs",
       config = function() require("nvim-autopairs").setup {} end
@@ -37,4 +45,5 @@ return require('packer').startup(function(use)
   }
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
+
 end)
