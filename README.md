@@ -61,7 +61,10 @@ My custom keybindings for neovim
 | n    | `<leader>gs` | Run the Git command in Vim |
 
 ### Fuzzy Finder Keybindings
-
+<sub>for grep functionality install ripgrep</sub>
+```
+sudo apt install ripgrep
+```
 | Mode | Key Binding  | Functionality                                            |
 | ---- | ------------ | -------------------------------------------------------- |
 | n    | `<leader>pf` | Open a fuzzy finder for files in the project             |
