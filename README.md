@@ -20,14 +20,14 @@ The plugins I use in my neovim config
 | [`numToStr/Comment.nvim`](https://github.com/numToStr/Comment.nvim)                     | Commenting plugin                           |
 | [`vim-airline/vim-airline`](https://github.com/vim-airline/vim-airline)                 | Statusline                                  |
 | [`vim-airline/vim-airline-themes`](https://github.com/vim-airline/vim-airline-themes)   | Themes for vim-airline                      |
-| ['L3MON4D3/LuaSnip'](https://github.com/L3MON4D3/LuaSnip)                               | Snippet engine for Neovim in Lua            |
-| ['saadparwaiz1/cmp_luasnip'](https://github.com/saadparwaiz1/cmp_luasnip)               | LuaSnip source for nvim-cmp                 |
-| ['hrsh7th/cmp-nvim-lsp'](https://github.com/hrsh7th/cmp-nvim-lsp)                       | LSP source for nvim-cmp                     |
-| ['rafamadriz/friendly-snippets'](https://github.com/rafamadriz/friendly-snippets)       | Collection of pre-configured snippets       |
-| ['neovim/nvim-lspconfig'](https://github.com/neovim/nvim-lspconfig)                     | Configuration for built-in LSP              |
-| ['hrsh7th/nvim-cmp'](https://github.com/hrsh7th/nvim-cmp)                               | Autocompletion plugin                       |
-| ['iamcco/markdown-preview.nvim'](https://github.com/iamcco/markdown-preview.nvim)       | Markdown previewer                          |
-| ['pineapplegiant/spaceduck'](https://github.com/pineapplegiant/spaceduck)             | nice theme                                  |
+| [`L3MON4D3/LuaSnip`](https://github.com/L3MON4D3/LuaSnip)                               | Snippet engine for Neovim in Lua            |
+| [`saadparwaiz1/cmp_luasnip`](https://github.com/saadparwaiz1/cmp_luasnip)               | LuaSnip source for nvim-cmp                 |
+| [`hrsh7th/cmp-nvim-lsp`](https://github.com/hrsh7th/cmp-nvim-lsp)                       | LSP source for nvim-cmp                     |
+| [`rafamadriz/friendly-snippets`](https://github.com/rafamadriz/friendly-snippets)       | Collection of pre-configured snippets       |
+| [`neovim/nvim-lspconfig`](https://github.com/neovim/nvim-lspconfig)                     | Configuration for built-in LSP              |
+| [`hrsh7th/nvim-cmp`](https://github.com/hrsh7th/nvim-cmp)                               | Autocompletion plugin                       |
+| [`iamcco/markdown-preview.nvim`](https://github.com/iamcco/markdown-preview.nvim)       | Markdown previewer                          |
+| [`pineapplegiant/spaceduck`](https://github.com/pineapplegiant/spaceduck)             | nice theme                                  |
 
 
 <br></br>
