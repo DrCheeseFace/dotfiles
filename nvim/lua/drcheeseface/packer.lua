@@ -76,5 +76,6 @@ return require('packer').startup(function(use)
   }
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
+  use {'jinh0/eyeliner.nvim'}
 
 end)

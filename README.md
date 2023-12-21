@@ -27,7 +27,8 @@ The plugins I use in my neovim config
 | [`neovim/nvim-lspconfig`](https://github.com/neovim/nvim-lspconfig)                     | Configuration for built-in LSP              |
 | [`hrsh7th/nvim-cmp`](https://github.com/hrsh7th/nvim-cmp)                               | Autocompletion plugin                       |
 | [`iamcco/markdown-preview.nvim`](https://github.com/iamcco/markdown-preview.nvim)       | Markdown previewer                          |
-| [`pineapplegiant/spaceduck`](https://github.com/pineapplegiant/spaceduck)             | nice theme                                  |
+| [`pineapplegiant/spaceduck`](https://github.com/pineapplegiant/spaceduck)               | nice theme                                  |
+| [`jinh0/eyeliner.nvim`](https://github.com/jinh0/eyeliner.nvim)                         | easier horizontal movement                  |
 
 
 <br></br>
