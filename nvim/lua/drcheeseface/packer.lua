@@ -22,19 +22,12 @@ return require('packer').startup(function(use)
     config = function()
         --		vim.cmd("colorscheme rose-pine")
     end
-})
-use({ 'pineapplegiant/spaceduck', as = 'spaceduck',
-config = function()
-    vim.cmd("colorscheme spaceduck")
-end
     })
-
-    --indent guidelines
-    use {
-        'lukas-reineke/indent-blankline.nvim',
-        config = function()
-            require("ibl").setup()
-        end}
+    use ({ 'pineapplegiant/spaceduck', as = 'spaceduck',
+    config = function()
+        vim.cmd("colorscheme spaceduck")
+    end
+    })
 
     --indent guidline highlighting
     use {
@@ -45,13 +38,22 @@ end
     }
 
     --nice notifications
+    use 'MunifTanjim/nui.nvim'
+    use {
+        'rcarriga/nvim-notify',
+        config = function()
+            require('notify').setup()
+        end
+    }
     use {
         'folke/noice.nvim',
         config = function()
-            require('noice').setup()
+            require('noice').setup{
+                dependencies = {"MunifTanjim/nui.nvim",
+                                "rcarriga/nvim-notify"}
+            }
         end
     }
-    use 'MunifTanjim/nui.nvim'
 
     --markdown preview
     use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
