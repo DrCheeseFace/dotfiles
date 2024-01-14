@@ -3,6 +3,28 @@
 <br></br>
 
 ## Vim
+### Installation
+copying neovim config folder to ~/.config
+```
+git clone https://github.com/DrCheeseFace/dotfiles.git ~/.config
+nvim
+``
+```
+If Packer does not automatically start installing plugins V
+```
+ cd ~/.config/nvim/lua/drcheeseface
+ nvim packer.lua
+ //type the vim commands
+ :so
+ :PackerCompile
+ :PackerSync
+```
+for grep functionality install ripgrep (you want this)
+```
+sudo apt install ripgrep -y
+```
+After a relaunch, the transparent backgroud should be working
+
 
 The plugins I use in my neovim config
 | Plugin                                                                                  | Description                                 |
@@ -62,10 +84,6 @@ My custom keybindings for neovim
 | n    | `<leader>gs` | Run the Git command in Vim |
 
 ### Fuzzy Finder Keybindings
-<sub>for grep functionality install ripgrep</sub>
-```
-sudo apt install ripgrep
-```
 | Mode | Key Binding  | Functionality                                            |
 | ---- | ------------ | -------------------------------------------------------- |
 | n    | `<leader>pf` | Open a fuzzy finder for files in the project             |
