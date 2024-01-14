@@ -30,8 +30,12 @@ sudo apt install ripgrep -y
 ```
 After a relaunch, the transparent backgroud should be working
 
-
+### Plugins
 The plugins I use in my neovim config
+<details>
+<summary>(Theres alota them)</summary>
+<br>
+
 | Plugin                                                                                  | Description                                 |
 | --------------------------------------------------------------------------------------- | ------------------------------------------- |
 | [`rose-pine/neovim`](https://github.com/rose-pine/neovim)                               | Rose Pine colorscheme                       |
@@ -54,9 +58,14 @@ The plugins I use in my neovim config
 | [`neovim/nvim-lspconfig`](https://github.com/neovim/nvim-lspconfig)                     | Configuration for built-in LSP              |
 | [`hrsh7th/nvim-cmp`](https://github.com/hrsh7th/nvim-cmp)                               | Autocompletion plugin                       |
 | [`iamcco/markdown-preview.nvim`](https://github.com/iamcco/markdown-preview.nvim)       | Markdown previewer                          |
-| [`pineapplegiant/spaceduck`](https://github.com/pineapplegiant/spaceduck)               | nice theme                                  |
-| [`jinh0/eyeliner.nvim`](https://github.com/jinh0/eyeliner.nvim)                         | easier horizontal movement                  |
-
+| [`pineapplegiant/spaceduck`](https://github.com/pineapplegiant/spaceduck)               | Nice theme                                  |
+| [`jinh0/eyeliner.nvim`](https://github.com/jinh0/eyeliner.nvim)                         | Easier horizontal movement                  |
+| [`lukas-reineke/indent-blankline,nvim`](https://github.com/lukas-reineke/indent-blankline.nvim)| Indentation indicators               |
+| [`echasnovski/mini.indentscope`](https://github.com/echasnovski/mini.indentscope)      | Indentation indicator highlightors          |
+| [`folke/noice.nvim`](https://github.com/folke/noice.nvim)                               | Notifs and pretty commandline               |
+| [`MuniTanjim/nui.nvim`](https://github.com/MunifTanjim/nui.nvim)                        | Dependency for noice.nvim                   |
+| [`echasnovski/mini.surround`](https://github.com/echasnovski/mini.surround)             | surrounding text shortcuts                  |
+</details>
 
 <br></br>
 My custom keybindings for neovim
@@ -81,6 +90,9 @@ My custom keybindings for neovim
 | n    | `<C-u>`      | Scroll half a screen up and reposition cursor to the center   |
 | v    | `J`          | Move selected lines down                                      |
 | v    | `K`          | Move selected lines up                                        |
+| n    | `sa`         | add surrounding character                                     |
+| n    | `sd`         | delete surrounding character                                  |
+| n    | `sr`         | replace surrounding character                                 |
 
 ### Git Keybindings
 
