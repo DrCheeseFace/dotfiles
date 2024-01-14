@@ -93,6 +93,7 @@ My custom keybindings for neovim
 | n    | `sa`         | add surrounding character                                     |
 | n    | `sd`         | delete surrounding character                                  |
 | n    | `sr`         | replace surrounding character                                 |
+| n    | `<leader>cn` | clear notifs                                                  |
 
 ### Git Keybindings
 
