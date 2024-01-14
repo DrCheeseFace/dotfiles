@@ -1,7 +1,14 @@
-# My Neovim, Tmux and Zellij configs!
-![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white)
+
+<h1 align="center">My Neovim, Tmux and Zellij configs!</h1>
+
+<div align="center">
+ 
+[![Neovim Minimum Version](https://img.shields.io/badge/Neovim-0.9.0-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=white)](https://github.com/neovim/neovim)
 ![config](https://img.shields.io/badge/Editor%20Config-E0EFEF?style=for-the-badge&logo=editorconfig&logoColor=000)
-![kfc](https://img.shields.io/badge/KFC-F40027?style=for-the-badge&logo=kfc&logoColor=white)
+[![kfc](https://img.shields.io/badge/KFC-F40027?style=for-the-badge&logo=kfc&logoColor=white)](https://www.kfc.co.uk/)
+
+</div>
+
 # 🦟 BUGS! 🐛
  - ✅ packer needs a :so command everytime you want to run packer commands
 # 
@@ -18,8 +25,8 @@ copying neovim config folder to ~/.config
 git clone https://github.com/DrCheeseFace/dotfiles.git ~/.config
 nvim
 ```
-make sure neovim is v0.8+
-If Packer does not automatically start installing plugins V
+make sure neovim is v0.8+ <br>
+If Packer does not automatically start installing plugins
 ```
  cd ~/.config/nvim/lua/drcheeseface
  nvim packer.lua
