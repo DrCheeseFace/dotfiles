@@ -36,7 +36,7 @@ return require('packer').startup(function(use)
             require('mini.indentscope').setup()
         end
     }
-
+    
     --nice notifications
     use 'MunifTanjim/nui.nvim'
     use {
