@@ -114,11 +114,12 @@ My custom keybindings for neovim
 | n    | `<leader>gs` | Run the Git command in Vim |
 
 ### Fuzzy Finder Keybindings
-| Mode | Key Binding  | Functionality                                            |
-| ---- | ------------ | -------------------------------------------------------- |
-| n    | `<leader>pf` | Open a fuzzy finder for files in the project             |
-| n    | `<C-p>`      | Open a fuzzy finder for Git-tracked files in the project |
-| n    | `<leader>ps` | Grep for a string in the project (user-inputted string)  |
+| Mode | Key Binding  | Functionality                                                |
+| ---- | ------------ | ------------------------------------------------------------ |
+| n    | `<leader>pf` | Open a fuzzy finder for files in the project                 |
+| n    | `<C-p>`      | Open a fuzzy finder for Git-tracked files in the project     |
+| n    | `<leader>ps` | Grep for a string in the project (user-inputted string)      |
+| n    | `<leader>fr` | Grep for a string in the current file (user-inputted string) |
 
 ### LSP Keybindings 
 
