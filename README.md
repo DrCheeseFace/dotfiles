@@ -15,7 +15,6 @@ apt install gcc -y
 ```
 copying neovim config folder to ~/.config
 ```
-apt install gcc -y
 git clone https://github.com/DrCheeseFace/dotfiles.git ~/.config
 nvim
 ```
