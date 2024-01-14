@@ -1,9 +1,14 @@
 # My Neovim, Tmux and Zellij configs!
-
+![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white)
+![config](https://img.shields.io/badge/Editor%20Config-E0EFEF?style=for-the-badge&logo=editorconfig&logoColor=000)
+![kfc](https://img.shields.io/badge/KFC-F40027?style=for-the-badge&logo=kfc&logoColor=white)
+# 🦟 BUGS! 🐛
+ - packer needs a :so command everytime you want to run packer commands
+# 
+![ims of my dope ass terminal setup](./zellij.jpg)
 <br></br>
-
 ## Vim
-### Installation
+### Installation guide
 copying neovim config folder to ~/.config
 ```
 git clone https://github.com/DrCheeseFace/dotfiles.git ~/.config
@@ -150,11 +155,6 @@ ui {
 theme "tokyo-night-dark"
 
 ```
-
-## ZELLIJ example
-
-![ims of my dope ass terminal setup](https://github.com/DrCheeseFace/neovimAndTemux/blob/main/zellij.jpg?raw=true)
-<br></br>
 
 # TMUX Configuration
 
