@@ -60,9 +60,9 @@ The plugins I use in my neovim config
 | [`iamcco/markdown-preview.nvim`](https://github.com/iamcco/markdown-preview.nvim)       | Markdown previewer                          |
 | [`pineapplegiant/spaceduck`](https://github.com/pineapplegiant/spaceduck)               | Nice theme                                  |
 | [`jinh0/eyeliner.nvim`](https://github.com/jinh0/eyeliner.nvim)                         | Easier horizontal movement                  |
-| [`lukas-reineke/indent-blankline,nvim`](https://github.com/lukas-reineke/indent-blankline.nvim)| Indentation indicators               |
-| [`echasnovski/mini.indentscope`](https://github.com/echasnovski/mini.indentscope)      | Indentation indicator highlightors          |
-| [`folke/noice.nvim`](https://github.com/folke/noice.nvim)                               | Notifs and pretty commandline               |
+| [`echasnovski/mini.indentscope`](https://github.com/echasnovski/mini.indentscope)       | Indentation indicator highlightors          |
+| [`folke/noice.nvim`](https://github.com/folke/noice.nvim)                               | pretty vim commands                         |
+| [`rcarriga/nvim-notify`](https://github.com/rcarriga/nvim-notify)                       | Notifs                                      |
 | [`MuniTanjim/nui.nvim`](https://github.com/MunifTanjim/nui.nvim)                        | Dependency for noice.nvim                   |
 | [`echasnovski/mini.surround`](https://github.com/echasnovski/mini.surround)             | surrounding text shortcuts                  |
 </details>
