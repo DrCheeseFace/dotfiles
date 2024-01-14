@@ -10,6 +10,3 @@ end)
 vim.keymap.set('n', '<leader>vd', function()
 require('telescope.builtin').diagnostics({ severity_bound = 0 })
 end)
--- vim.keymap.set('n', 'K', function()
---     require("telescope.builtin").lsp_definitions { jump_type = "never" }
--- end)
