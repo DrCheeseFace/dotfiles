@@ -4,7 +4,8 @@
 <div align="center">
  
 [![Neovim Minimum Version](https://img.shields.io/badge/Neovim-0.9.0-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=white)](https://github.com/neovim/neovim)
-![config](https://img.shields.io/badge/Editor%20Config-E0EFEF?style=for-the-badge&logo=editorconfig&logoColor=000)
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+[![Code Size](https://img.shields.io/github/languages/code-size/drcheeseface/dotfiles)](https://img.shields.io/github/languages/code-size/drcheeseface/dotfiles)
 [![kfc](https://img.shields.io/badge/KFC-F40027?style=for-the-badge&logo=kfc&logoColor=white)](https://www.kfc.co.uk/)
 
 </div>
