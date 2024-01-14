@@ -3,7 +3,7 @@
 ![config](https://img.shields.io/badge/Editor%20Config-E0EFEF?style=for-the-badge&logo=editorconfig&logoColor=000)
 ![kfc](https://img.shields.io/badge/KFC-F40027?style=for-the-badge&logo=kfc&logoColor=white)
 # 🦟 BUGS! 🐛
- - packer needs a :so command everytime you want to run packer commands
+ - ✅ packer needs a :so command everytime you want to run packer commands
 # 
 ![ims of my dope ass terminal setup](./zellij.jpg)
 <br></br>
