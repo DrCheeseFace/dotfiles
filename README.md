@@ -9,13 +9,17 @@
 <br></br>
 ## Vim
 ### Installation guide
+install c compiler if you dont already have one
+```
+apt install gcc -y
+```
 copying neovim config folder to ~/.config
 ```
 apt install gcc -y
 git clone https://github.com/DrCheeseFace/dotfiles.git ~/.config
 nvim
-``
 ```
+make sure neovim is v0.8+
 If Packer does not automatically start installing plugins V
 ```
  cd ~/.config/nvim/lua/drcheeseface
