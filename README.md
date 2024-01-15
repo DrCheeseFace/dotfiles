@@ -84,9 +84,10 @@ The plugins I use in my neovim config
 </details>
 
 <br></br>
-My custom keybindings for neovim
+### My custom keybindings for neovim
 
-### Harpoon Keybindings
+
+#### Harpoon Keybindings 
 
 | Mode | Key Binding | Functionality                                                  |
 | ---- | ----------- | -------------------------------------------------------------- |
@@ -97,7 +98,7 @@ My custom keybindings for neovim
 | n    | `<C-n>`     | Select the third entry in Harpoon's project list               |
 | n    | `<C-s>`     | Select the fourth entry in Harpoon's project list              |
 
-### General Vim Commands
+#### General Vim Commands
 
 | Mode | Key Binding  | Functionality                                                 |
 | ---- | ------------ | ------------------------------------------------------------- |
@@ -111,13 +112,13 @@ My custom keybindings for neovim
 | n    | `sr`         | replace surrounding character                                 |
 | n    | `<leader>cn` | clear notifs                                                  |
 
-### Git Keybindings
+#### Git Keybindings
 
 | Mode | Key Binding  | Functionality              |
 | ---- | ------------ | -------------------------- |
 | n    | `<leader>gs` | Run the Git command in Vim |
 
-### Fuzzy Finder Keybindings
+#### Fuzzy Finder Keybindings
 | Mode | Key Binding  | Functionality                                                |
 | ---- | ------------ | ------------------------------------------------------------ |
 | n    | `<leader>pf` | Open a fuzzy finder for files in the project                 |
@@ -125,7 +126,7 @@ My custom keybindings for neovim
 | n    | `<leader>ps` | Grep for a string in the project (user-inputted string)      |
 | n    | `<leader>fr` | Grep for lsp reference (user-inputted string)                |
 
-### LSP Keybindings 
+#### LSP Keybindings 
 
 | Mode | Key Binding      | Function Description                            |
 |------|------------------|-------------------------------------------------|
@@ -144,7 +145,7 @@ My custom keybindings for neovim
 |  n   | `<C-y>`          | Confirm and select completion suggestion        |
 |  n   | `<C-Space>`      | Trigger autocompletion                          |
 
-### Oil Keybindings 
+#### Oil Keybindings 
 
 | Mode | Key Binding | Functionality                                       |
 | ---- | ----------- | --------------------------------------------------- |
