@@ -55,6 +55,15 @@ return require('packer').startup(function(use)
         end
     }
 
+    --file management with devicons
+    use({
+        "stevearc/oil.nvim",
+        config = function()
+            require("oil").setup()
+        end,
+    })
+    use 'nvim-tree/nvim-web-devicons'
+
     --markdown preview
     use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 

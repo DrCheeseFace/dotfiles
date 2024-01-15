@@ -77,6 +77,10 @@ The plugins I use in my neovim config
 | [`rcarriga/nvim-notify`](https://github.com/rcarriga/nvim-notify)                       | Notifs                                      |
 | [`MuniTanjim/nui.nvim`](https://github.com/MunifTanjim/nui.nvim)                        | Dependency for noice.nvim                   |
 | [`echasnovski/mini.surround`](https://github.com/echasnovski/mini.surround)             | surrounding text shortcuts                  |
+| [`stevearc/oil.nvim`](https://github.com/stevearc/oil.nvim)                              | file management                             |
+| [`nvim-tree/nvim-web-devicons`](https://github.com/nvim-tree/nvim-web-devicons)         | icons :3                                    |
+
+
 </details>
 
 <br></br>
@@ -140,8 +144,20 @@ My custom keybindings for neovim
 |  n   | `<C-y>`          | Confirm and select completion suggestion        |
 |  n   | `<C-Space>`      | Trigger autocompletion                          |
 
+### Oil Keybindings 
 
-
+| Mode | Key Binding | Functionality                                       |
+| ---- | ----------- | --------------------------------------------------- |
+| n    | `<C-p>`     | Preview in Oil                                      |
+| n    | `<C-l>`     | Refresh Oil                                         |
+| n    | `-`         | Go to parent directory in Oil                       |
+| n    | `_`         | Open current working directory in Oil               |
+| n    | `` ` ``     | Change to the root directory in Oil                 |
+| n    | `~`         | Change to the home directory in Oil                 |
+| n    | `gs`        | Change sort order in Oil                            |
+| n    | `gx`        | Open external file or project in Oil                |
+| n    | `g.`        | Toggle hidden files in Oil                          |
+| n    | `g\\`       | Toggle trash (delete) in Oil                        |
 
 
 <br></br>
