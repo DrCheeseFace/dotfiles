@@ -107,9 +107,9 @@ The plugins I use in my neovim config
 | n    | `<C-u>`      | Scroll half a screen up and reposition cursor to the center   |
 | v    | `J`          | Move selected lines down                                      |
 | v    | `K`          | Move selected lines up                                        |
-| n    | `sa`         | add surrounding character                                     |
-| n    | `sd`         | delete surrounding character                                  |
-| n    | `sr`         | replace surrounding character                                 |
+| v    | `sa`         | add surrounding character                                     |
+| v    | `sd`         | delete surrounding character                                  |
+| v    | `sr`         | replace surrounding character                                 |
 | n    | `<leader>cn` | clear notifs                                                  |
 
 #### Git Keybindings
