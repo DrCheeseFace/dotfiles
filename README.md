@@ -24,7 +24,7 @@ apt install gcc -y
 copying neovim config folder to ~/.config
 ```
 git clone https://github.com/DrCheeseFace/dotfiles.git ~/.config
-nvim
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 ```
 make sure neovim is v0.8+ <br>
 If Packer does not automatically start installing plugins
