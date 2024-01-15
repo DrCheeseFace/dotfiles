@@ -199,21 +199,21 @@ theme "tokyo-night-dark"
 
 ```
 
-# TMUX Configuration
+## TMUX Configuration
 
 This is a customized TMUX configuration for a productive and aesthetically pleasing terminal experience.
 
-## Configuration Settings
+### Configuration Settings
 
 | Setting                                   | Description                                 |
 | ----------------------------------------- | ------------------------------------------- |
 | `setw -g mouse on`                        | Enable mouse support within TMUX            |
 | `set -s default-terminal 'tmux-256color'` | Set the default terminal to 'tmux-256color' |
 
-## Plugins
+### Plugins
 
 The configuration includes several plugins managed by [Tmux Plugin Manager (TPM)](https://github.com/tmux-plugins/tpm). The listed plugins are:
-## TPM Installation
+### TPM Installation
 
 [Tmux Plugin Manager (TPM)](https://github.com/tmux-plugins/tpm) is used as the plugin manager for tmux
 
@@ -224,7 +224,7 @@ The configuration includes several plugins managed by [Tmux Plugin Manager (TPM)
 | [`tmux-plugins/tmux-sensible`](https://github.com/tmux-plugins/tmux-sensible) | Sensible configurations for TMUX |
 | [`dracula/tmux`](https://github.com/dracula/tmux)                             | Dracula theme for TMUX           |
 
-## Dracula Theme Customizations
+### Dracula Theme Customizations
 
 The Dracula theme is customized with additional features. The following configurations are applied:
 
