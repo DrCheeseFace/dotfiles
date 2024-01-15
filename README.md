@@ -11,26 +11,28 @@
 </div>
 
 # 🦟 BUGS! 🐛
- - ✅ packer needs a :so command everytime you want to run packer commands
+ - [x] packer needs a :so command everytime you want to run packer commands
+# TODO
+- [ ] add functionality to automatically sync plugins after making changes to packer.lua
 # 
 ![ims of my dope ass terminal setup](./zellij.jpg)
 <br></br>
 ## Vim
 ### Installation guide
-install c compiler if you dont already have one
+install a C compiler if you dont already have one
 ```
-apt install gcc -y
+$ sudo apt install gcc -y
 ```
-copying neovim config folder to ~/.config
+copying neovim config folder (nvim/) to ~/.config
 ```
-git clone https://github.com/DrCheeseFace/dotfiles.git ~/.config
-nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+$ git clone https://github.com/DrCheeseFace/dotfiles.git ~/.config
+$ nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 ```
 make sure neovim is v0.8+ <br>
 If Packer does not automatically start installing plugins
 ```
- cd ~/.config/nvim/lua/drcheeseface
- nvim packer.lua
+ $ cd ~/.config/nvim/lua/drcheeseface
+ $ nvim packer.lua
  //type the vim commands
  :so
  :PackerCompile
@@ -38,7 +40,7 @@ If Packer does not automatically start installing plugins
 ```
 for grep functionality install ripgrep (you want this)
 ```
-sudo apt install ripgrep -y
+$ sudo apt install ripgrep -y
 ```
 After a relaunch, the transparent backgroud should be working
 
@@ -77,7 +79,7 @@ The plugins I use in my neovim config
 | [`rcarriga/nvim-notify`](https://github.com/rcarriga/nvim-notify)                       | Notifs                                      |
 | [`MuniTanjim/nui.nvim`](https://github.com/MunifTanjim/nui.nvim)                        | Dependency for noice.nvim                   |
 | [`echasnovski/mini.surround`](https://github.com/echasnovski/mini.surround)             | surrounding text shortcuts                  |
-| [`stevearc/oil.nvim`](https://github.com/stevearc/oil.nvim)                              | file management                             |
+| [`stevearc/oil.nvim`](https://github.com/stevearc/oil.nvim)                             | file management                             |
 | [`nvim-tree/nvim-web-devicons`](https://github.com/nvim-tree/nvim-web-devicons)         | icons :3                                    |
 
 
