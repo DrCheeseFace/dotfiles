@@ -28,7 +28,7 @@ copying neovim config folder (nvim/) to ~/.config
 $ git clone https://github.com/DrCheeseFace/dotfiles.git ~/.config
 $ nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 ```
-make sure neovim is v0.8+ <br>
+[make sure neovim is v0.8+](https://github.com/neovim/neovim/blob/master/INSTALL.md) <br>
 If Packer does not automatically start installing plugins
 ```
  $ cd ~/.config/nvim/lua/drcheeseface
