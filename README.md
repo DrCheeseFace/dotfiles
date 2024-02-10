@@ -11,26 +11,28 @@
 </div>
 
 # 🦟 BUGS! 🐛
- - ✅ packer needs a :so command everytime you want to run packer commands
+ - [x] packer needs a :so command everytime you want to run packer commands
+# 📝 TODO ✍️
+- [ ] add functionality to automatically sync plugins after making changes to packer.lua
 # 
 ![ims of my dope ass terminal setup](./zellij.jpg)
 <br></br>
-## Vim
+## Vim 🦆
 ### Installation guide
-install c compiler if you dont already have one
+install a C compiler if you dont already have one
 ```
-apt install gcc -y
+$ sudo apt install gcc -y
 ```
-copying neovim config folder to ~/.config
+copying neovim config folder (nvim/) to ~/.config
 ```
-git clone https://github.com/DrCheeseFace/dotfiles.git ~/.config
-nvim
+$ git clone https://github.com/DrCheeseFace/dotfiles.git ~/.config
+$ nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 ```
-make sure neovim is v0.8+ <br>
+[make sure neovim is v0.8+](https://github.com/neovim/neovim/blob/master/INSTALL.md) <br>
 If Packer does not automatically start installing plugins
 ```
- cd ~/.config/nvim/lua/drcheeseface
- nvim packer.lua
+ $ cd ~/.config/nvim/lua/drcheeseface
+ $ nvim packer.lua
  //type the vim commands
  :so
  :PackerCompile
@@ -38,11 +40,11 @@ If Packer does not automatically start installing plugins
 ```
 for grep functionality install ripgrep (you want this)
 ```
-sudo apt install ripgrep -y
+$ sudo apt install ripgrep -y
 ```
 After a relaunch, the transparent backgroud should be working
 
-### Plugins
+### Plugins 🔌
 The plugins I use in my neovim config
 <details>
 <summary>(Theres alota them)</summary>
@@ -77,7 +79,7 @@ The plugins I use in my neovim config
 | [`rcarriga/nvim-notify`](https://github.com/rcarriga/nvim-notify)                       | Notifs                                      |
 | [`MuniTanjim/nui.nvim`](https://github.com/MunifTanjim/nui.nvim)                        | Dependency for noice.nvim                   |
 | [`echasnovski/mini.surround`](https://github.com/echasnovski/mini.surround)             | surrounding text shortcuts                  |
-| [`stevearc/oil.nvim`](https://github.com/stevearc/oil.nvim)                              | file management                             |
+| [`stevearc/oil.nvim`](https://github.com/stevearc/oil.nvim)                             | file management                             |
 | [`nvim-tree/nvim-web-devicons`](https://github.com/nvim-tree/nvim-web-devicons)         | icons :3                                    |
 | [`RaafatTurki/hex.nvim`](https://github.com/RaafatTurki/hex.nvim)         | hex editor                                    |
 
@@ -88,7 +90,7 @@ The plugins I use in my neovim config
 ### My custom keybindings for neovim
 
 
-#### Harpoon Keybindings 
+#### Harpoon Keybindings 🎣 
 
 | Mode | Key Binding | Functionality                                                  |
 | ---- | ----------- | -------------------------------------------------------------- |
@@ -99,7 +101,7 @@ The plugins I use in my neovim config
 | n    | `<C-n>`     | Select the third entry in Harpoon's project list               |
 | n    | `<C-s>`     | Select the fourth entry in Harpoon's project list              |
 
-#### General Vim Commands
+#### General Vim Commands ⚙️
 
 | Mode | Key Binding  | Functionality                                                 |
 | ---- | ------------ | ------------------------------------------------------------- |
@@ -113,13 +115,13 @@ The plugins I use in my neovim config
 | v    | `sr`         | replace surrounding character                                 |
 | n    | `<leader>cn` | clear notifs                                                  |
 
-#### Git Keybindings
+#### Git Keybindings 📢
 
 | Mode | Key Binding  | Functionality              |
 | ---- | ------------ | -------------------------- |
 | n    | `<leader>gs` | Run the Git command in Vim |
 
-#### Fuzzy Finder Keybindings
+#### Fuzzy Finder Keybindings 🕵🏻
 | Mode | Key Binding  | Functionality                                                |
 | ---- | ------------ | ------------------------------------------------------------ |
 | n    | `<leader>pf` | Open a fuzzy finder for files in the project                 |
@@ -127,7 +129,7 @@ The plugins I use in my neovim config
 | n    | `<leader>ps` | Grep for a string in the project (user-inputted string)      |
 | n    | `<leader>fr` | Grep for lsp reference (user-inputted string)                |
 
-#### LSP Keybindings 
+#### LSP Keybindings 🈯
 
 | Mode | Key Binding      | Function Description                            |
 |------|------------------|-------------------------------------------------|
@@ -146,7 +148,7 @@ The plugins I use in my neovim config
 |  n   | `<C-y>`          | Confirm and select completion suggestion        |
 |  n   | `<C-Space>`      | Trigger autocompletion                          |
 
-#### Oil Keybindings 
+#### Oil Keybindings 🛢️
 
 | Mode | Key Binding | Functionality                                       |
 | ---- | ----------- | --------------------------------------------------- |
@@ -164,7 +166,7 @@ The plugins I use in my neovim config
 
 <br></br>
 
-## Zellij
+## Zellij 🖥️
 
 This is a customized Zellij configuration with themes and UI modifications.
 
@@ -200,7 +202,7 @@ theme "tokyo-night-dark"
 
 ```
 
-## TMUX Configuration
+## TMUX 👾
 
 This is a customized TMUX configuration for a productive and aesthetically pleasing terminal experience.
 
