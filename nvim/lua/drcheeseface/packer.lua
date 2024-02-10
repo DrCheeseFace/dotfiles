@@ -22,11 +22,11 @@ return require('packer').startup(function(use)
     config = function()
         --		vim.cmd("colorscheme rose-pine")
     end
-    })
-    use ({ 'pineapplegiant/spaceduck', as = 'spaceduck',
-    config = function()
-        vim.cmd("colorscheme spaceduck")
-    end
+})
+use ({ 'pineapplegiant/spaceduck', as = 'spaceduck',
+config = function()
+    vim.cmd("colorscheme spaceduck")
+end
     })
 
     --indent guidline highlighting
@@ -36,7 +36,7 @@ return require('packer').startup(function(use)
             require('mini.indentscope').setup()
         end
     }
-    
+
     --nice notifications
     use 'MunifTanjim/nui.nvim'
     use {
@@ -50,7 +50,7 @@ return require('packer').startup(function(use)
         config = function()
             require('noice').setup{
                 dependencies = {"MunifTanjim/nui.nvim",
-                                "rcarriga/nvim-notify"}
+                "rcarriga/nvim-notify"}
             }
         end
     }
@@ -99,6 +99,11 @@ return require('packer').startup(function(use)
     --lsp and linterst
     use {"williamboman/mason.nvim"}
     use 'williamboman/mason-lspconfig.nvim'
+
+    --hex editor
+    use {'RaafatTurki/hex.nvim', config = function() 
+    require 'hex'.setup(){} end}
+
 
     --autopair brackets
     use {
