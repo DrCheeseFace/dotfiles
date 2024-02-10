@@ -98,11 +98,12 @@ end
 
     --lsp and linterst
     use {"williamboman/mason.nvim"}
-    use 'williamboman/mason-lspconfig.nvim'
+    use {'williamboman/mason-lspconfig.nvim'}
 
     --hex editor
-    use {'RaafatTurki/hex.nvim', config = function() 
-    require 'hex'.setup(){} end}
+    use {'RaafatTurki/hex.nvim',
+    config = function() require('hex').setup{} end
+}
 
 
     --autopair brackets
