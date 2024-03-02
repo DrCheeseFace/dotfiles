@@ -10,3 +10,9 @@ end)
 vim.keymap.set('n', '<leader>vd', function()
 require('telescope.builtin').diagnostics({ severity_bound = 0 })
 end)
+vim.keymap.set('n', '<leader>gf', function()
+    require('telescope.builtin').live_grep({search = value,
+                                            previewer = false,
+                                            grep_open_files = true,
+                                            layout_config = { width = 0.5, height = 0.5 }})
+        end)

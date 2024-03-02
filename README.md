@@ -135,6 +135,7 @@ The plugins I use in my neovim config
 | n    | `<C-p>`      | Open a fuzzy finder for Git-tracked files in the project     |
 | n    | `<leader>ps` | Grep for a string in the project (user-inputted string)      |
 | n    | `<leader>fr` | Grep for lsp reference (user-inputted string)                |
+| n    | `<leader>gf` | Grep for a string within a file                              |
 
 #### LSP Keybindings 🈯
 
