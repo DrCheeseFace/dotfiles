@@ -96,6 +96,19 @@ The plugins I use in my neovim config
 <br></br>
 ### My custom keybindings for neovim
 
+#### General Vim Commands ⚙️
+
+| Mode | Key Binding  | Functionality                                                 |
+| ---- | ------------ | ------------------------------------------------------------- |
+| n    | `<leader>pv` | Execute `vim.cmd.Ex` (show integrated neovim navigation       |
+| n    | `<C-d>`      | Scroll half a screen down and reposition cursor to the center |
+| n    | `<C-u>`      | Scroll half a screen up and reposition cursor to the center   |
+| n    | `<leader>u`  | open undotree                                                 |
+| v    | `J`          | Move selected lines down                                      |
+| v    | `K`          | Move selected lines up                                        |
+| v    | `sa`         | add surrounding character                                     |
+| v    | `sd`         | delete surrounding character                                  |
+| v    | `sr`         | replace surrounding character                                 |
 
 #### Harpoon Keybindings 🎣 
 
@@ -107,19 +120,6 @@ The plugins I use in my neovim config
 | n    | `<C-t>`     | Select the second entry in Harpoon's project list              |
 | n    | `<C-n>`     | Select the third entry in Harpoon's project list               |
 | n    | `<C-s>`     | Select the fourth entry in Harpoon's project list              |
-
-#### General Vim Commands ⚙️
-
-| Mode | Key Binding  | Functionality                                                 |
-| ---- | ------------ | ------------------------------------------------------------- |
-| n    | `<leader>pv` | Execute `vim.cmd.Ex` (show integrated neovim navigation       |
-| n    | `<C-d>`      | Scroll half a screen down and reposition cursor to the center |
-| n    | `<C-u>`      | Scroll half a screen up and reposition cursor to the center   |
-| v    | `J`          | Move selected lines down                                      |
-| v    | `K`          | Move selected lines up                                        |
-| v    | `sa`         | add surrounding character                                     |
-| v    | `sd`         | delete surrounding character                                  |
-| v    | `sr`         | replace surrounding character                                 |
 
 #### Git Keybindings 📢
 
