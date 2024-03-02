@@ -103,12 +103,13 @@ The plugins I use in my neovim config
 | n    | `<leader>pv` | Execute `vim.cmd.Ex` (show integrated neovim navigation       |
 | n    | `<C-d>`      | Scroll half a screen down and reposition cursor to the center |
 | n    | `<C-u>`      | Scroll half a screen up and reposition cursor to the center   |
-| n    | `<leader>u`  | open undotree                                                 |
+| n    | `<leader>u`  | Open undotree                                                 |
+| n    | `<leader>ts` | Horizontal split to vertical split (mostly for git fugitive)  |
 | v    | `J`          | Move selected lines down                                      |
 | v    | `K`          | Move selected lines up                                        |
-| v    | `sa`         | add surrounding character                                     |
-| v    | `sd`         | delete surrounding character                                  |
-| v    | `sr`         | replace surrounding character                                 |
+| v    | `sa`         | Add surrounding character                                     |
+| v    | `sd`         | Delete surrounding character                                  |
+| v    | `sr`         | Replace surrounding character                                 |
 
 #### Harpoon Keybindings 🎣 
 
