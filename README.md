@@ -43,6 +43,15 @@ for grep functionality install ripgrep (you want this)
 $ sudo apt install ripgrep -y
 ```
 After a relaunch, the transparent backgroud should be working
+<br>
+[To install github copilot run the commands ](https://docs.github.com/en/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vimneovim#prerequisites-3)
+```
+:Copilot setup
+:Copilot enable
+```
+
+
+
 
 ### Plugins 🔌
 The plugins I use in my neovim config
@@ -79,6 +88,7 @@ The plugins I use in my neovim config
 | [`stevearc/oil.nvim`](https://github.com/stevearc/oil.nvim)                             | file management                             |
 | [`nvim-tree/nvim-web-devicons`](https://github.com/nvim-tree/nvim-web-devicons)         | icons :3                                    |
 | [`RaafatTurki/hex.nvim`](https://github.com/RaafatTurki/hex.nvim)                       | hex editor                                  |
+| [`github/copilot.vim`](https://github.com/github/copilot.vim)                           | github copilot                              |
 
 
 </details>

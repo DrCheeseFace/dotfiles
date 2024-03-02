@@ -29,6 +29,9 @@ config = function()
 end
     })
 
+    -- github copilot
+    use 'github/copilot.vim'
+
     --indent guidline highlighting
     use {
         'echasnovski/mini.indentscope',
@@ -36,25 +39,6 @@ end
             require('mini.indentscope').setup()
         end
     }
-
-    --nice notifications
-    -- use 'MunifTanjim/nui.nvim'
-    -- use {
-    --     'rcarriga/nvim-notify',
-    --     config = function()
-    --         require('notify').setup()
-    --     end
-    -- }
-    -- use {
-    --     'folke/noice.nvim',
-    --     config = function()
-    --         require('noice').setup{
-    --             dependencies = {"MunifTanjim/nui.nvim",
-    --             "rcarriga/nvim-notify"},
-    --         }
-    --     end
-    -- }
-
     --file management with devicons
     use({
         "stevearc/oil.nvim",
@@ -104,7 +88,6 @@ end
     use {'RaafatTurki/hex.nvim',
     config = function() require('hex').setup{} end
 }
-
 
     --autopair brackets
     use {
