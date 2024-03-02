@@ -39,12 +39,12 @@ end
 
     --nice notifications
     -- use 'MunifTanjim/nui.nvim'
-    use {
-        'rcarriga/nvim-notify',
-        config = function()
-            require('notify').setup()
-        end
-    }
+    -- use {
+    --     'rcarriga/nvim-notify',
+    --     config = function()
+    --         require('notify').setup()
+    --     end
+    -- }
     -- use {
     --     'folke/noice.nvim',
     --     config = function()

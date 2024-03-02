@@ -75,11 +75,10 @@ The plugins I use in my neovim config
 | [`pineapplegiant/spaceduck`](https://github.com/pineapplegiant/spaceduck)               | Nice theme                                  |
 | [`jinh0/eyeliner.nvim`](https://github.com/jinh0/eyeliner.nvim)                         | Easier horizontal movement                  |
 | [`echasnovski/mini.indentscope`](https://github.com/echasnovski/mini.indentscope)       | Indentation indicator highlightors          |
-| [`rcarriga/nvim-notify`](https://github.com/rcarriga/nvim-notify)                       | Notifs                                      |
 | [`echasnovski/mini.surround`](https://github.com/echasnovski/mini.surround)             | surrounding text shortcuts                  |
 | [`stevearc/oil.nvim`](https://github.com/stevearc/oil.nvim)                             | file management                             |
 | [`nvim-tree/nvim-web-devicons`](https://github.com/nvim-tree/nvim-web-devicons)         | icons :3                                    |
-| [`RaafatTurki/hex.nvim`](https://github.com/RaafatTurki/hex.nvim)         | hex editor                                    |
+| [`RaafatTurki/hex.nvim`](https://github.com/RaafatTurki/hex.nvim)                       | hex editor                                  |
 
 
 </details>
