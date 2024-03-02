@@ -45,15 +45,15 @@ end
             require('notify').setup()
         end
     }
-    use {
-        'folke/noice.nvim',
-        config = function()
-            require('noice').setup{
-                dependencies = {"MunifTanjim/nui.nvim",
-                "rcarriga/nvim-notify"}
-            }
-        end
-    }
+    -- use {
+    --     'folke/noice.nvim',
+    --     config = function()
+    --         require('noice').setup{
+    --             dependencies = {"MunifTanjim/nui.nvim",
+    --             "rcarriga/nvim-notify"},
+    --         }
+    --     end
+    -- }
 
     --file management with devicons
     use({
