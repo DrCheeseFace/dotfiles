@@ -38,7 +38,7 @@ end
     }
 
     --nice notifications
-    use 'MunifTanjim/nui.nvim'
+    -- use 'MunifTanjim/nui.nvim'
     use {
         'rcarriga/nvim-notify',
         config = function()
