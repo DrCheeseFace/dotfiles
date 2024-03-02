@@ -110,7 +110,6 @@ The plugins I use in my neovim config
 | v    | `sa`         | add surrounding character                                     |
 | v    | `sd`         | delete surrounding character                                  |
 | v    | `sr`         | replace surrounding character                                 |
-| n    | `<leader>cn` | clear notifs                                                  |
 
 #### Git Keybindings 📢
 
