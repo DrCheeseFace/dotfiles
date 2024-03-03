@@ -107,9 +107,9 @@ The plugins I use in my neovim config
 | n    | `<leader>ts` | Horizontal split to vertical split (mostly for git fugitive)  |
 | v    | `J`          | Move selected lines down                                      |
 | v    | `K`          | Move selected lines up                                        |
-| v    | `sa`         | Add surrounding character                                     |
-| v    | `sd`         | Delete surrounding character                                  |
-| v    | `sr`         | Replace surrounding character                                 |
+| n, v |`sa`          | Add surrounding character                                     |
+| n    | `sd`         | Delete surrounding character                                  |
+| n    | `sr`         | Replace surrounding character                                 |
 
 #### Harpoon Keybindings 🎣 
 
