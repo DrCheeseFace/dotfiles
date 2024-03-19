@@ -116,7 +116,8 @@ The plugins I use in my neovim config
 | Mode | Key Binding | Functionality                                                  |
 | ---- | ----------- | -------------------------------------------------------------- |
 | n    | `<leader>a` | Append a new entry in Harpoon (a plugin for managing projects) |
-| n    | `<C-e>`     | Toggle the quick menu in Harpoon for project navigation        |
+| n    | `<leader>A` | Toggle the quick menu in Harpoon (mainly to delete entries)    |
+| n    | `<C-e>`     | Toggle telescope view of Harpoon marks                         |
 | n    | `<C-h>`     | Select the first entry in Harpoon's project list               |
 | n    | `<C-t>`     | Select the second entry in Harpoon's project list              |
 | n    | `<C-n>`     | Select the third entry in Harpoon's project list               |
