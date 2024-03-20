@@ -181,10 +181,13 @@ This is a customized Zellij configuration with themes and UI modifications.
 
 - [Tokyo Night Dark theme](https://github.com/zellij-org/zellij/blob/main/zellij-utils/assets/themes/tokyo-night-dark.kdl)
 - rounded pane corners
+- compact layout
 
 ### [Tokyo Night Dark](https://github.com/zellij-org/zellij/blob/main/zellij-utils/assets/themes/tokyo-night-dark.kdl)
 
 ```plaintext
+pane_frames false
+
 themes{
   tokyo-night-dark {
           fg 169 177 214
@@ -209,11 +212,14 @@ ui {
 
 theme "tokyo-night-dark"
 
+default_layout "compact"
+
 ```
 
 ## TMUX 👾
 
 This is a customized TMUX configuration for a productive and aesthetically pleasing terminal experience.
+(this was ai generated text lmao)
 
 ### Configuration Settings
 
