@@ -35,14 +35,12 @@ If Packer does not automatically start installing plugins
  $ nvim packer.lua
  //type the vim commands
  :so
- :PackerCompile
  :PackerSync
 ```
 for grep functionality install ripgrep (you want this)
 ```
 $ sudo apt install ripgrep -y
 ```
-After a relaunch, the transparent backgroud should be working
 <br>
 [To install github copilot run the commands ](https://docs.github.com/en/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vimneovim#prerequisites-3)
 ```
@@ -82,8 +80,9 @@ The plugins I use in my neovim config
 | [`hrsh7th/nvim-cmp`](https://github.com/hrsh7th/nvim-cmp)                               | Autocompletion plugin                       |
 | [`iamcco/markdown-preview.nvim`](https://github.com/iamcco/markdown-preview.nvim)       | Markdown previewer                          |
 | [`pineapplegiant/spaceduck`](https://github.com/pineapplegiant/spaceduck)               | Nice theme                                  |
+| [`xiyaowong/transparent.nvim`](https://github.com/xiyaowong/transparent.nvim)           | Transparent background                      |
 | [`jinh0/eyeliner.nvim`](https://github.com/jinh0/eyeliner.nvim)                         | Easier horizontal movement                  |
-| [`echasnovski/mini.indentscope`](https://github.com/echasnovski/mini.indentscope)       | Indentation indicator highlightors          |
+| [`echasnovski/mini.indentscope`](https://github.com/echasnovski/mini.indentscope)       | Indentation indicator                       |
 | [`echasnovski/mini.surround`](https://github.com/echasnovski/mini.surround)             | surrounding text shortcuts                  |
 | [`stevearc/oil.nvim`](https://github.com/stevearc/oil.nvim)                             | file management                             |
 | [`nvim-tree/nvim-web-devicons`](https://github.com/nvim-tree/nvim-web-devicons)         | icons :3                                    |
@@ -107,7 +106,7 @@ The plugins I use in my neovim config
 | n    | `<leader>ts` | Horizontal split to vertical split (mostly for git fugitive)  |
 | v    | `J`          | Move selected lines down                                      |
 | v    | `K`          | Move selected lines up                                        |
-| n, v |`sa`          | Add surrounding character                                     |
+| n, v | `sa`         | Add surrounding character                                     |
 | n    | `sd`         | Delete surrounding character                                  |
 | n    | `sr`         | Replace surrounding character                                 |
 
@@ -148,14 +147,7 @@ The plugins I use in my neovim config
 |  n   | `<leader>vd`     | Open diagnostic float window                    |
 |  n   | `[d`             | Go to next diagnostic                           |
 |  n   | `]d`             | Go to previous diagnostic                       |
-|  n   | `<leader>vca`    | Show code actions                               |
-|  n   | `<leader>vrr`    | List references for symbol                      |
 |  n   | `<leader>vrn`    | Rename symbol                                   |
-|  n   | `<C-h>`          | Show signature help in insert mode              |
-|  n   | `<C-up>`         | Navigate to previous completion item            |
-|  n   | `<C-down>`       | Navigate to next completion item                |
-|  n   | `<C-y>`          | Confirm and select completion suggestion        |
-|  n   | `<C-Space>`      | Trigger autocompletion                          |
 
 #### Oil Keybindings 🛢️
 
