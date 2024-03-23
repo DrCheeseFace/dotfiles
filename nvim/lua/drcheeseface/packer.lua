@@ -50,6 +50,15 @@ return require('packer').startup(function(use)
     })
     use 'nvim-tree/nvim-web-devicons'
 
+    --TROUBLE TROUBLE TROUBLE
+    use {
+        "folke/trouble.nvim",
+        requires = "kyazdani42/nvim-web-devicons",
+        config = function()
+            require("trouble").setup {}
+        end
+    }
+
     --markdown preview
     use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 

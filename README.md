@@ -145,6 +145,7 @@ The plugins I use in my neovim config
 |  n   | `K`              | Show hover information                          |
 |  n   | `<leader>vws`    | Workspace symbol search                         |
 |  n   | `<leader>vd`     | Open diagnostic float window                    |
+|  n   | `<leader>xx`     | Open trouble diagnostics                        |
 |  n   | `[d`             | Go to next diagnostic                           |
 |  n   | `]d`             | Go to previous diagnostic                       |
 |  n   | `<leader>vrn`    | Rename symbol                                   |
