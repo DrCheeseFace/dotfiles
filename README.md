@@ -88,6 +88,7 @@ The plugins I use in my neovim config
 | [`nvim-tree/nvim-web-devicons`](https://github.com/nvim-tree/nvim-web-devicons)         | icons :3                                    |
 | [`RaafatTurki/hex.nvim`](https://github.com/RaafatTurki/hex.nvim)                       | hex editor                                  |
 | [`github/copilot.vim`](https://github.com/github/copilot.vim)                           | github copilot                              |
+| [`folke/trouble.nvim`](https://github.com/folke/trouble.vim)                            | trouble diagnostic window                   |
 
 
 </details>
