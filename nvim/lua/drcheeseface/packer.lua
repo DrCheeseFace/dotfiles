@@ -17,7 +17,7 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
-    --themes (set them in colors.lua)
+    --themes (set them in aesthetics.lua)
     -- use({ 'rose-pine/neovim', as = 'rose-pine',
     -- config = function()
     --     --		vim.cmd("colorscheme rose-pine")
