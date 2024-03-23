@@ -42,7 +42,8 @@ for grep functionality install ripgrep (you want this)
 $ sudo apt install ripgrep -y
 ```
 <br>
-[To install github copilot run the commands ](https://docs.github.com/en/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vimneovim#prerequisites-3)
+
+[To install github copilot run the commands](https://docs.github.com/en/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vimneovim#prerequisites-3)
 ```
 :Copilot setup
 :Copilot enable
