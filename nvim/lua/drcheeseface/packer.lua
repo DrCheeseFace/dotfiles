@@ -22,7 +22,8 @@ return require('packer').startup(function(use)
     -- config = function()
     --     --		vim.cmd("colorscheme rose-pine")
     -- end})
-    use ({ 'pineapplegiant/spaceduck', as = 'spaceduck'})
+    use ({ 'pineapplegiant/spaceduck', as = 'spaceduck',
+    config = function() vim.cmd("colorscheme spaceduck") end})
     -- use ({ 'rebelot/kanagawa.nvim', as = 'kanagawa',
     -- config = function()
     --    vim.cmd("colorscheme kanagawa")
@@ -119,6 +120,8 @@ return require('packer').startup(function(use)
             require('Comment').setup()
         end
     }
+    -- for checking plugin startup times
+    -- use "dstein64/vim-startuptime"
 
     --status bar
     use 'vim-airline/vim-airline'
