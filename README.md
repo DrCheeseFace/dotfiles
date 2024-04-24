@@ -12,7 +12,7 @@
 
 # 🦟 BUGS! 🐛
  - [x] packer needs a :so command everytime you want to run packer commands
- - [ ] vimdoc no work (´•╭╮•`) 
+ - [x] vimdoc no work (´•╭╮•`) 
 # 📝 TODO ✍️
 - [ ] add functionality to automatically sync plugins after making changes to packer.lua
 # 
@@ -37,6 +37,12 @@ If Packer does not automatically start installing plugins
  //type the vim commands
  :so
  :PackerSync
+```
+Theres an issue with loading vimdoc sometimes due to nvims default vimscript 
+parser and treesitters one. This caused longer boot times.    
+
+```
+:TsInstall! vim
 ```
 for grep functionality install ripgrep (you want this)
 ```
