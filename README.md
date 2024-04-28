@@ -96,6 +96,7 @@ The plugins I use in my neovim config
 | [`RaafatTurki/hex.nvim`](https://github.com/RaafatTurki/hex.nvim)                       | hex editor                                  |
 | [`github/copilot.vim`](https://github.com/github/copilot.vim)                           | github copilot                              |
 | [`folke/trouble.nvim`](https://github.com/folke/trouble.vim)                            | trouble diagnostic window                   |
+| [`~whynothuga/lsp_lines.nvim`](https://git.sr.ht/~whynothugo/lsp_lines.nvim)            | pretty lsp lines                            |
 
 
 </details>

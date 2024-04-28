@@ -31,6 +31,11 @@ vim.opt.updatetime = 50
 
 vim.g.mapleader = " "
 
+-- for lsp-lines to avoid duplicated error messages
+vim.diagnostic.config({
+    virtual_text = false,
+})
+
 
 
 
