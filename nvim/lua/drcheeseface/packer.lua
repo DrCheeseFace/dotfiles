@@ -77,14 +77,6 @@ return require("packer").startup(function(use)
         use {"hrsh7th/nvim-cmp"}
         use {"VonHeikemen/lsp-zero.nvim"}
 
-        --lsp lines
-        use({
-            "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
-            config = function()
-                require("lsp_lines").setup()
-            end,
-        })
-
         --the goat treesitter
         use {
             "nvim-telescope/telescope.nvim", tag = "0.1.4",

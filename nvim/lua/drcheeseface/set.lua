@@ -31,11 +31,6 @@ vim.opt.updatetime = 50
 
 vim.g.mapleader = " "
 
--- for lsp-lines to avoid duplicated error messages
-vim.diagnostic.config({
-    virtual_text = false,
-})
-
 -- Highlight when yanking text
 vim.api.nvim_create_autocmd("TextYankPost", {
     desc = "When text is yanked, highlight the selection",
