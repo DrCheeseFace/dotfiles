@@ -20,14 +20,6 @@ return require("packer").startup(function(use)
     --themes 
     use ({ "pineapplegiant/spaceduck", as = "spaceduck",
     config = function() vim.cmd("colorscheme spaceduck") end})
-    -- use({ 'rose-pine/neovim', as = 'rose-pine',
-    -- config = function()
-        --     --		vim.cmd("colorscheme rose-pine")
-        -- end})
-        -- use ({ 'rebelot/kanagawa.nvim', as = 'kanagawa',
-        -- config = function()
-            --    vim.cmd("colorscheme kanagawa")
-            -- end})
 
             -- transparent background
             use {"xiyaowong/nvim-transparent"}
@@ -145,7 +137,15 @@ return require("packer").startup(function(use)
 
     -- see :help lsp-zero-guide:integrate-with-mason-nvim
     -- to learn how to use mason.nvim with lsp-zero
-    require("mason").setup({})
+    require("mason").setup({
+        ui = {
+            icons = {
+                package_installed = "✓",
+                package_pending = "➜",
+                package_uninstalled = "✗"
+            }
+        }
+    })
     require("mason-lspconfig").setup({
         handlers = {
             lsp_zero.default_setup,
