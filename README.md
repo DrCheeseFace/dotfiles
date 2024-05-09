@@ -107,7 +107,6 @@ The plugins I use in my neovim config
 
 | Mode | Key Binding  | Functionality                                                 |
 | ---- | ------------ | ------------------------------------------------------------- |
-| n    | `<leader>pv` | Execute `vim.cmd.Ex` (show integrated neovim navigation       |
 | n    | `<C-d>`      | Scroll half a screen down and reposition cursor to the center |
 | n    | `<C-u>`      | Scroll half a screen up and reposition cursor to the center   |
 | n    | `<leader>u`  | Open undotree                                                 |
