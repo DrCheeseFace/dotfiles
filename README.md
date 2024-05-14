@@ -1,6 +1,5 @@
 
 <h1 align="center">My Neovim, Tmux and Zellij configs!</h1>
-
 <div align="center">
  
 [![Neovim Minimum Version](https://img.shields.io/badge/Neovim-0.9.0-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=white)](https://github.com/neovim/neovim)
@@ -96,6 +95,7 @@ The plugins I use in my neovim config
 | [`RaafatTurki/hex.nvim`](https://github.com/RaafatTurki/hex.nvim)                       | hex editor                                  |
 | [`github/copilot.vim`](https://github.com/github/copilot.vim)                           | github copilot                              |
 | [`folke/trouble.nvim`](https://github.com/folke/trouble.vim)                            | trouble diagnostic window                   |
+| [`windwp/nvim-ts-autotag`](https://github.com/windwp/nvim-ts-autotag)                   | auto html tag completer                     |
 
 
 </details>

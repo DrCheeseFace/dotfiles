@@ -110,6 +110,11 @@ return require("packer").startup(function(use)
         config = function() require("mini.surround").setup {} end
     }
 
+    --html auto tags
+    use {
+        "windwp/nvim-ts-autotag",
+    }
+
     --commenting
     use {
         "numToStr/Comment.nvim",
