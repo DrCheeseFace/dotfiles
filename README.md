@@ -154,6 +154,9 @@ The plugins I use in my neovim config
 |  n   | `<leader>xx`     | Open trouble diagnostics                        |
 |  n   | `<leader>vrn`    | Rename symbol                                   |
 |  n   | `<leader>vca`    | Show code actions                               |
+|  n   | `<C-j>`          | Next cmp                                        |
+|  n   | `<C-k>`          | Previous cmp                                    |
+|  n   | `<C-space>`      | Select cmp                                      |
 
 #### Oil Keybindings 🛢️
 

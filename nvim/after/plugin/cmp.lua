@@ -30,9 +30,8 @@ cmp.setup({
   },
   formatting = lsp_zero.cmp_format(),
   mapping = cmp.mapping.preset.insert({
-    ['<C-up>'] = cmp.mapping.select_prev_item(cmp_select),
-    ['<C-down>'] = cmp.mapping.select_next_item(cmp_select),
-    -- ['<C-y>'] = cmp.mapping.confirm({ select = true }),
-    -- ['<C-Space>'] = cmp.mapping.complete(),
+    ['<C-k>'] = cmp.mapping.select_prev_item(cmp_select),
+    ['<C-j>'] = cmp.mapping.select_next_item(cmp_select),
+    ['<C-space>'] = cmp.mapping.confirm({behavior = cmp.ConfirmBehavior.Replace, select = true}),
   }),
 })
