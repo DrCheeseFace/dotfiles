@@ -54,11 +54,11 @@ return require("packer").startup(function(use)
 
             --markdown preview
             use({ "iamcco/markdown-preview.nvim",
-            run = "cd app && npm install",
-            setup = function() vim.g.mkdp_filetypes = { "markdown" }
-            end,
-            ft = { "markdown" }
-        })
+                run = "cd app && npm install",
+                setup = function() vim.g.mkdp_filetypes = { "markdown" }
+                end,
+                ft = { "markdown" }
+            })
 
         --snippits and sugestions
         use {"L3MON4D3/LuaSnip"}
@@ -109,6 +109,13 @@ return require("packer").startup(function(use)
         "echasnovski/mini.surround",
         config = function() require("mini.surround").setup {} end
     }
+
+    -- word highlighting
+    use {
+        "echasnovski/mini.cursorword",
+        config = function() require("mini.cursorword").setup {} end
+    }
+
 
     --html auto tags
     use {
