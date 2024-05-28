@@ -68,39 +68,40 @@ The plugins I use in my neovim config
 <summary>(Theres alota them)</summary>
 <br>
 
-| Plugin                                                                                  | Description                                 |
-| --------------------------------------------------------------------------------------- | ------------------------------------------- |
-| [`folke/lazy.nvim`](https://github.com/folke/lazy.nvim)                                 | the laziest package manager                 |
-| [`nvim-telescope/telescope.nvim`](https://github.com/nvim-telescope/telescope.nvim)     | Fuzzy finder                                |
-| [`nvim-treesitter/nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter) | Syntax tree sitter                          |
-| [`nvim-lua/plenary.nvim`](https://github.com/nvim-lua/plenary.nvim)                     | Plenary library (required for some plugins) |
-| [`ThePrimeagen/harpoon`](https://github.com/ThePrimeagen/harpoon)                       | Project navigation                          |
-| [`mbbill/undotree`](https://github.com/mbbill/undotree)                                 | Visualize undo history in a tree format     |
-| [`tpope/vim-fugitive`](https://github.com/tpope/vim-fugitive)                           | Git integration                             |
-| [`williamboman/mason.nvim`](https://github.com/williamboman/mason.nvim)                 | Portable package manager                    |
-| [`windwp/nvim-autopairs`](https://github.com/windwp/nvim-autopairs)                     | Autopairs                                   |
-| [`numToStr/Comment.nvim`](https://github.com/numToStr/Comment.nvim)                     | Commenting plugin                           |
-| [`vim-airline/vim-airline`](https://github.com/vim-airline/vim-airline)                 | Statusline                                  |
-| [`vim-airline/vim-airline-themes`](https://github.com/vim-airline/vim-airline-themes)   | Themes for vim-airline                      |
-| [`L3MON4D3/LuaSnip`](https://github.com/L3MON4D3/LuaSnip)                               | Snippet engine for Neovim in Lua            |
-| [`saadparwaiz1/cmp_luasnip`](https://github.com/saadparwaiz1/cmp_luasnip)               | LuaSnip source for nvim-cmp                 |
-| [`hrsh7th/cmp-nvim-lsp`](https://github.com/hrsh7th/cmp-nvim-lsp)                       | LSP source for nvim-cmp                     |
-| [`rafamadriz/friendly-snippets`](https://github.com/rafamadriz/friendly-snippets)       | Collection of pre-configured snippets       |
-| [`neovim/nvim-lspconfig`](https://github.com/neovim/nvim-lspconfig)                     | Configuration for built-in LSP              |
-| [`hrsh7th/nvim-cmp`](https://github.com/hrsh7th/nvim-cmp)                               | Autocompletion plugin                       |
-| [`iamcco/markdown-preview.nvim`](https://github.com/iamcco/markdown-preview.nvim)       | Markdown previewer                          |
-| [`pineapplegiant/spaceduck`](https://github.com/pineapplegiant/spaceduck)               | Nice theme                                  |
-| [`xiyaowong/transparent.nvim`](https://github.com/xiyaowong/transparent.nvim)           | Transparent background                      |
-| [`jinh0/eyeliner.nvim`](https://github.com/jinh0/eyeliner.nvim)                         | Easier horizontal movement                  |
-| [`echasnovski/mini.indentscope`](https://github.com/echasnovski/mini.indentscope)       | Indentation indicator                       |
-| [`echasnovski/mini.surround`](https://github.com/echasnovski/mini.surround)             | surrounding text shortcuts                  |
-| [`echasnovski/mini.cursorword`](https://github.com/echasnovski/mini.cursorword)         | highlights word under cursor                |
-| [`stevearc/oil.nvim`](https://github.com/stevearc/oil.nvim)                             | file management                             |
-| [`nvim-tree/nvim-web-devicons`](https://github.com/nvim-tree/nvim-web-devicons)         | icons :3                                    |
-| [`RaafatTurki/hex.nvim`](https://github.com/RaafatTurki/hex.nvim)                       | hex editor                                  |
-| [`github/copilot.vim`](https://github.com/github/copilot.vim)                           | github copilot                              |
-| [`folke/trouble.nvim`](https://github.com/folke/trouble.vim)                            | trouble diagnostic window                   |
-| [`windwp/nvim-ts-autotag`](https://github.com/windwp/nvim-ts-autotag)                   | auto html tag completer                     |
+| Plugin                                                                                     | Description                                 |
+| ---------------------------------------------------------------------------------------    | ------------------------------------------- |
+| [`folke/lazy.nvim`](https://github.com/folke/lazy.nvim)                                    | the laziest package manager                 |
+| [`nvim-telescope/telescope.nvim`](https://github.com/nvim-telescope/telescope.nvim)        | Fuzzy finder                                |
+| [`nvim-treesitter/nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter)    | Syntax tree sitter                          |
+| [`nvim-lua/plenary.nvim`](https://github.com/nvim-lua/plenary.nvim)                        | Plenary library (required for some plugins) |
+| [`ThePrimeagen/harpoon`](https://github.com/ThePrimeagen/harpoon)                          | Project navigation                          |
+| [`mbbill/undotree`](https://github.com/mbbill/undotree)                                    | Visualize undo history in a tree format     |
+| [`tpope/vim-fugitive`](https://github.com/tpope/vim-fugitive)                              | Git integration                             |
+| [`williamboman/mason.nvim`](https://github.com/williamboman/mason.nvim)                    | Portable package manager                    |
+| [`williamboman/mason-lspconfig.nvim`](https://github.com/williamboman/mason-lspconfig.nvim)| mason lsp config                            |
+| [`numToStr/Comment.nvim`](https://github.com/numToStr/Comment.nvim)                        | Commenting plugin                           |
+| [`vim-airline/vim-airline`](https://github.com/vim-airline/vim-airline)                    | Statusline                                  |
+| [`vim-airline/vim-airline-themes`](https://github.com/vim-airline/vim-airline-themes)      | Themes for vim-airline                      |
+| [`L3MON4D3/LuaSnip`](https://github.com/L3MON4D3/LuaSnip)                                  | Snippet engine for Neovim in Lua            |
+| [`saadparwaiz1/cmp_luasnip`](https://github.com/saadparwaiz1/cmp_luasnip)                  | LuaSnip source for nvim-cmp                 |
+| [`hrsh7th/cmp-nvim-lsp`](https://github.com/hrsh7th/cmp-nvim-lsp)                          | LSP source for nvim-cmp                     |
+| [`rafamadriz/friendly-snippets`](https://github.com/rafamadriz/friendly-snippets)          | Collection of pre-configured snippets       |
+| [`neovim/nvim-lspconfig`](https://github.com/neovim/nvim-lspconfig)                        | Configuration for built-in LSP              |
+| [`hrsh7th/nvim-cmp`](https://github.com/hrsh7th/nvim-cmp)                                  | Autocompletion plugin                       |
+| [`iamcco/markdown-preview.nvim`](https://github.com/iamcco/markdown-preview.nvim)          | Markdown previewer                          |
+| [`pineapplegiant/spaceduck`](https://github.com/pineapplegiant/spaceduck)                  | Nice theme                                  |
+| [`xiyaowong/transparent.nvim`](https://github.com/xiyaowong/transparent.nvim)              | Transparent background                      |
+| [`jinh0/eyeliner.nvim`](https://github.com/jinh0/eyeliner.nvim)                            | Easier horizontal movement                  |
+| [`echasnovski/mini.indentscope`](https://github.com/echasnovski/mini.indentscope)          | Indentation indicator                       |
+| [`echasnovski/mini.surround`](https://github.com/echasnovski/mini.surround)                | surrounding text shortcuts                  |
+| [`echasnovski/mini.cursorword`](https://github.com/echasnovski/mini.cursorword)            | highlights word under cursor                |
+| [`stevearc/oil.nvim`](https://github.com/stevearc/oil.nvim)                                | file management                             |
+| [`nvim-tree/nvim-web-devicons`](https://github.com/nvim-tree/nvim-web-devicons)            | icons :3                                    |
+| [`RaafatTurki/hex.nvim`](https://github.com/RaafatTurki/hex.nvim)                          | hex editor                                  |
+| [`github/copilot.vim`](https://github.com/github/copilot.vim)                              | github copilot                              |
+| [`folke/trouble.nvim`](https://github.com/folke/trouble.vim)                               | trouble diagnostic window                   |
+| [`windwp/nvim-ts-autotag`](https://github.com/windwp/nvim-ts-autotag)                      | auto html tag completer                     |
+| [`j-hui/fidget.nvim`](https://github.com/j-hui/fidget.nvim)                                | clean notifs                                |
 
 
 </details>
@@ -155,8 +156,11 @@ The plugins I use in my neovim config
 |------|------------------|-------------------------------------------------|
 |  n   | `gd`             | Go to definition                                |
 |  n   | `K`              | Show hover information                          |
+|  n   | `<leader>f`      | format buffer                                   |
 |  n   | `<leader>vd`     | Open diagnostic float window                    |
 |  n   | `<leader>xx`     | Open trouble diagnostics                        |
+|  n   | `]d`             | Previous diagnostic                             | 
+|  n   | `[d`             | Next diagnostic                                 |
 |  n   | `<leader>vrn`    | Rename symbol                                   |
 |  n   | `<leader>vca`    | Show code actions                               |
 |  n   | `<C-j>`          | Next cmp                                        |
