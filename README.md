@@ -1,5 +1,6 @@
 
 <h1 align="center">My Neovim, Tmux and Zellij configs!</h1>
+
 <div align="center">
  
 [![Neovim Minimum Version](https://img.shields.io/badge/Neovim-0.9.0-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=white)](https://github.com/neovim/neovim)
@@ -23,29 +24,32 @@ install a C compiler if you dont already have one
 ```
 $ sudo apt install gcc -y
 ```
+There are a few dependencies for everything to work
+```
+$ cargo install tree-sitter-cli
+or 
+$ npm install tree-sitter-cli
+
+```
+To get markdown preview working
+```
+npm install --global yarn
+```
+for grep functionality install ripgrep (you want this)
+```
+$ sudo apt install ripgrep -y
+```
 copying neovim config folder (nvim/) to ~/.config
 ```
 $ git clone https://github.com/DrCheeseFace/dotfiles.git ~/.config
-$ nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 ```
-[make sure neovim is v0.8+](https://github.com/neovim/neovim/blob/master/INSTALL.md) <br>
-If Packer does not automatically start installing plugins
-```
- $ cd ~/.config/nvim/lua/drcheeseface
- $ nvim packer.lua
- //type the vim commands
- :so
- :PackerSync
-```
+
+[make sure neovim is v0.9+](https://github.com/neovim/neovim/blob/master/INSTALL.md) <br>
 Theres an issue with loading vimdoc sometimes due to nvims default vimscript 
 parser and treesitters one. This caused longer boot times.    
 
 ```
 :TsInstall! vim
-```
-for grep functionality install ripgrep (you want this)
-```
-$ sudo apt install ripgrep -y
 ```
 <br>
 
@@ -66,7 +70,7 @@ The plugins I use in my neovim config
 
 | Plugin                                                                                  | Description                                 |
 | --------------------------------------------------------------------------------------- | ------------------------------------------- |
-| [`wbthomason/packer.nvim`](https://github.com/wbthomason/packer.nvim)                   | Plugin manager                              |
+| [`folke/lazy.nvim`](https://github.com/folke/lazy.nvim)                                 | the laziest package manager                 |
 | [`nvim-telescope/telescope.nvim`](https://github.com/nvim-telescope/telescope.nvim)     | Fuzzy finder                                |
 | [`nvim-treesitter/nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter) | Syntax tree sitter                          |
 | [`nvim-lua/plenary.nvim`](https://github.com/nvim-lua/plenary.nvim)                     | Plenary library (required for some plugins) |
