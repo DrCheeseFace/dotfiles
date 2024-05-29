@@ -27,7 +27,6 @@ require("mason-lspconfig").setup({
     },
     handlers = {
         function(server_name) -- default handler (optional)
-
             require("lspconfig")[server_name].setup {
                 capabilities = capabilities
             }
@@ -61,18 +60,18 @@ cmp.setup({
     mapping = cmp.mapping.preset.insert({
         ['<C-k>'] = cmp.mapping.select_prev_item(cmp_select),
         ['<C-j>'] = cmp.mapping.select_next_item(cmp_select),
-        ['<C-space>'] = cmp.mapping.confirm({behavior = cmp.ConfirmBehavior.Replace, select = true}),
+        ['<C-space>'] = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true }),
     }),
     sources = cmp.config.sources({
         { name = 'nvim_lsp' },
         { name = 'luasnip' }, -- For luasnip users.
     }, {
-            { name = 'buffer' },
-        })
+        { name = 'buffer' },
+    })
 })
 
 vim.diagnostic.config({
-    -- update_in_insert = true,
+    update_in_insert = true,
     float = {
         focusable = false,
         style = "minimal",
@@ -82,5 +81,3 @@ vim.diagnostic.config({
         prefix = "",
     },
 })
-
-
