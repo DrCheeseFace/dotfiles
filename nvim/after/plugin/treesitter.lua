@@ -27,5 +27,6 @@ require'nvim-treesitter.configs'.setup {
         "yaml",
         "svelte",
         "css",
+        "rust",
     },
 }

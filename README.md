@@ -122,6 +122,7 @@ The plugins I use in my neovim config
 | n, v | `sa`         | Add surrounding character                                     |
 | n    | `sd`         | Delete surrounding character                                  |
 | n    | `sr`         | Replace surrounding character                                 |
+| n    | `<leader>l`  | Save current buffer                                           |
 
 #### Harpoon Keybindings 🎣 
 
