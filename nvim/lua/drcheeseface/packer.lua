@@ -12,17 +12,23 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-    --themes 
+    --themes
     {
         "pineapplegiant/spaceduck",
+        dependencies = {
+            -- transparent background
+            {
+                "xiyaowong/nvim-transparent",
+                lazy = false,
+            },
+        },
         config = function()
             vim.cmd("colorscheme spaceduck")
-            vim.api.nvim_set_hl(0, "LineNr", { fg = "white"})
-            vim.api.nvim_set_hl(0, "Comment", { fg = "grey"})
+            vim.cmd("TransparentEnable")
+            vim.api.nvim_set_hl(0, "LineNr", { fg = "white" })
+            vim.api.nvim_set_hl(0, "Comment", { fg = "grey" })
         end
     },
-    -- transparent background
-    "xiyaowong/nvim-transparent",
     -- github copilot
     "github/copilot.vim",
     --indent guidline highlighting
@@ -53,7 +59,7 @@ local plugins = {
         },
     },
 
-	--the goat treesitter
+    --the goat treesitter
     {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate"
@@ -61,14 +67,14 @@ local plugins = {
     {
         "nvim-telescope/telescope.nvim",
         tag = "0.1.4",
-        dependencies = {"nvim-lua/plenary.nvim"}
+        dependencies = { "nvim-lua/plenary.nvim" }
     },
     --quick file navifation
     "nvim-lua/plenary.nvim",
     {
         "ThePrimeagen/harpoon",
         branch = "harpoon2",
-        dependencies= {{"nvim-lua/plenary.nvim"}}
+        dependencies = { { "nvim-lua/plenary.nvim" } }
     },
     --an undotree
     "mbbill/undotree",
