@@ -1,6 +1,8 @@
 require("lualine").setup({
     options = {
         theme = "spaceduck",
+        section_separators = { "", "" },
+        component_separators = { "", "" },
     },
 })
 
