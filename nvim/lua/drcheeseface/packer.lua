@@ -22,12 +22,6 @@ local plugins = {
                 lazy = false,
             },
         },
-        config = function()
-            vim.cmd("colorscheme spaceduck")
-            vim.cmd("TransparentEnable")
-            vim.api.nvim_set_hl(0, "LineNr", { fg = "white" })
-            vim.api.nvim_set_hl(0, "Comment", { fg = "grey" })
-        end
     },
     -- github copilot
     "github/copilot.vim",
