@@ -57,10 +57,10 @@ parser and treesitters one. This caused longer boot times.
 :Copilot enable
 ```
 
-
-
-
 ### Plugins 🔌
+
+
+
 The plugins I use in my neovim config
 <details>
 <summary>(Theres alota them)</summary>
@@ -78,8 +78,7 @@ The plugins I use in my neovim config
 | [`williamboman/mason.nvim`](https://github.com/williamboman/mason.nvim)                    | Portable package manager                    |
 | [`williamboman/mason-lspconfig.nvim`](https://github.com/williamboman/mason-lspconfig.nvim)| mason lsp config                            |
 | [`numToStr/Comment.nvim`](https://github.com/numToStr/Comment.nvim)                        | Commenting plugin                           |
-| [`vim-airline/vim-airline`](https://github.com/vim-airline/vim-airline)                    | Statusline                                  |
-| [`vim-airline/vim-airline-themes`](https://github.com/vim-airline/vim-airline-themes)      | Themes for vim-airline                      |
+| [`nvim-lualine/lualine.nvim`](https://github.com/nvim-lualine/lualine.nvim)                | Statusline                                  |
 | [`L3MON4D3/LuaSnip`](https://github.com/L3MON4D3/LuaSnip)                                  | Snippet engine for Neovim in Lua            |
 | [`saadparwaiz1/cmp_luasnip`](https://github.com/saadparwaiz1/cmp_luasnip)                  | LuaSnip source for nvim-cmp                 |
 | [`hrsh7th/cmp-nvim-lsp`](https://github.com/hrsh7th/cmp-nvim-lsp)                          | LSP source for nvim-cmp                     |
@@ -87,7 +86,7 @@ The plugins I use in my neovim config
 | [`neovim/nvim-lspconfig`](https://github.com/neovim/nvim-lspconfig)                        | Configuration for built-in LSP              |
 | [`hrsh7th/nvim-cmp`](https://github.com/hrsh7th/nvim-cmp)                                  | Autocompletion plugin                       |
 | [`iamcco/markdown-preview.nvim`](https://github.com/iamcco/markdown-preview.nvim)          | Markdown previewer                          |
-| [`pineapplegiant/spaceduck`](https://github.com/pineapplegiant/spaceduck)                  | Nice theme                                  |
+| [`spaceduck-theme/spaceduck`](https://github.com/spaceduck-theme/spaceduck)                | Nice theme                                  |
 | [`xiyaowong/transparent.nvim`](https://github.com/xiyaowong/transparent.nvim)              | Transparent background                      |
 | [`jinh0/eyeliner.nvim`](https://github.com/jinh0/eyeliner.nvim)                            | Easier horizontal movement                  |
 | [`echasnovski/mini.indentscope`](https://github.com/echasnovski/mini.indentscope)          | Indentation indicator                       |
