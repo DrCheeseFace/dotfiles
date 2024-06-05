@@ -42,10 +42,3 @@ end
 
 vim.keymap.set("n", "<C-e>", function() toggle_telescope(harpoon:list()) end,
     { desc = "Open harpoon window" })
-
-
-
-
-
-
-
