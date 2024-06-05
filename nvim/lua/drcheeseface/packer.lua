@@ -14,7 +14,8 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
     --themes
     {
-        "pineapplegiant/spaceduck",
+        "spaceduck-theme/nvim",
+        name = "spaceduck",
         dependencies = {
             -- transparent background
             {
@@ -22,6 +23,11 @@ local plugins = {
                 lazy = false,
             },
         },
+    },
+    --status bar
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
     },
     -- github copilot
     "github/copilot.vim",
@@ -52,7 +58,6 @@ local plugins = {
             "rafamadriz/friendly-snippets",
         },
     },
-
     --the goat treesitter
     {
         "nvim-treesitter/nvim-treesitter",
@@ -84,10 +89,8 @@ local plugins = {
     "windwp/nvim-ts-autotag",
     --commenting
     "numToStr/Comment.nvim",
-    --status bar
-    "vim-airline/vim-airline",
-    "vim-airline/vim-airline-themes",
     --horizontal highlighting when using 'f
+
     "jinh0/eyeliner.nvim",
     --markdown previewer
     {
