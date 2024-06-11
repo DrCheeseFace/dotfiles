@@ -165,21 +165,6 @@ The plugins I use in my neovim config
 |  n   | `<C-k>`          | Previous cmp                                    |
 |  n   | `<C-space>`      | Select cmp                                      |
 
-#### Oil Keybindings 🛢️
-
-| Mode | Key Binding | Functionality                                       |
-| ---- | ----------- | --------------------------------------------------- |
-| n    | `<C-p>`     | Preview in Oil                                      |
-| n    | `<C-l>`     | Refresh Oil                                         |
-| n    | `-`         | Go to parent directory in Oil                       |
-| n    | `_`         | Open current working directory in Oil               |
-| n    | `` ` ``     | Change to the root directory in Oil                 |
-| n    | `~`         | Change to the home directory in Oil                 |
-| n    | `gs`        | Change sort order in Oil                            |
-| n    | `gx`        | Open external file or project in Oil                |
-| n    | `g.`        | Toggle hidden files in Oil                          |
-| n    | `g\\`       | Toggle trash (delete) in Oil                        |
-
 
 <br></br>
 
