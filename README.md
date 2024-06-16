@@ -87,7 +87,6 @@ The plugins I use in my neovim config
 | [`iamcco/markdown-preview.nvim`](https://github.com/iamcco/markdown-preview.nvim)          | Markdown previewer                          |
 | [`eldritch-theme/eldritch.nvim`](https://github.com/eldritch-theme/eldritch.nvim)          | Nice theme                                  |
 | [`nvim-lualine/lualine.nvim`](https://github.com/nvim-lualine/lualine.nvim)                | Statusline                                  |
-| [`xiyaowong/transparent.nvim`](https://github.com/xiyaowong/transparent.nvim)              | Transparent background                      |
 | [`jinh0/eyeliner.nvim`](https://github.com/jinh0/eyeliner.nvim)                            | Easier horizontal movement                  |
 | [`echasnovski/mini.indentscope`](https://github.com/echasnovski/mini.indentscope)          | Indentation indicator                       |
 | [`echasnovski/mini.surround`](https://github.com/echasnovski/mini.surround)                | surrounding text shortcuts                  |
