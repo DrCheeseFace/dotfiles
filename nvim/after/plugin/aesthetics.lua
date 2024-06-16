@@ -1,6 +1,6 @@
 require("lualine").setup({
     options = {
-        theme = "spaceduck",
+        theme = 'eldritch',
         section_separators = { "", "" },
         component_separators = { "", "" },
     },
@@ -14,6 +14,6 @@ require("lualine").setup({
     },
 })
 
-vim.cmd("colorscheme spaceduck")
+vim.cmd [[colorscheme eldritch]]
 vim.api.nvim_set_hl(0, "LineNr", { fg = "white" })
 vim.api.nvim_set_hl(0, "Comment", { fg = "grey" })

@@ -14,15 +14,10 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
     --themes
     {
-        "spaceduck-theme/nvim",
-        name = "spaceduck",
-        dependencies = {
-            -- transparent background
-            {
-                "xiyaowong/nvim-transparent",
-                lazy = false,
-            },
-        },
+        "eldritch-theme/eldritch.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = { transparent = true },
     },
     --status bar
     {
@@ -85,8 +80,6 @@ local plugins = {
     "echasnovski/mini.surround",
     -- word highlighting
     "echasnovski/mini.cursorword",
-    --html auto tags
-    "windwp/nvim-ts-autotag",
     --commenting
     "numToStr/Comment.nvim",
     --horizontal highlighting when using 'f

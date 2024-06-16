@@ -78,7 +78,6 @@ The plugins I use in my neovim config
 | [`williamboman/mason.nvim`](https://github.com/williamboman/mason.nvim)                    | Portable package manager                    |
 | [`williamboman/mason-lspconfig.nvim`](https://github.com/williamboman/mason-lspconfig.nvim)| mason lsp config                            |
 | [`numToStr/Comment.nvim`](https://github.com/numToStr/Comment.nvim)                        | Commenting plugin                           |
-| [`nvim-lualine/lualine.nvim`](https://github.com/nvim-lualine/lualine.nvim)                | Statusline                                  |
 | [`L3MON4D3/LuaSnip`](https://github.com/L3MON4D3/LuaSnip)                                  | Snippet engine for Neovim in Lua            |
 | [`saadparwaiz1/cmp_luasnip`](https://github.com/saadparwaiz1/cmp_luasnip)                  | LuaSnip source for nvim-cmp                 |
 | [`hrsh7th/cmp-nvim-lsp`](https://github.com/hrsh7th/cmp-nvim-lsp)                          | LSP source for nvim-cmp                     |
@@ -86,7 +85,8 @@ The plugins I use in my neovim config
 | [`neovim/nvim-lspconfig`](https://github.com/neovim/nvim-lspconfig)                        | Configuration for built-in LSP              |
 | [`hrsh7th/nvim-cmp`](https://github.com/hrsh7th/nvim-cmp)                                  | Autocompletion plugin                       |
 | [`iamcco/markdown-preview.nvim`](https://github.com/iamcco/markdown-preview.nvim)          | Markdown previewer                          |
-| [`spaceduck-theme/spaceduck`](https://github.com/spaceduck-theme/spaceduck)                | Nice theme                                  |
+| [`eldritch-theme/eldritch.nvim`](https://github.com/eldritch-theme/eldritch.nvim)          | Nice theme                                  |
+| [`nvim-lualine/lualine.nvim`](https://github.com/nvim-lualine/lualine.nvim)                | Statusline                                  |
 | [`xiyaowong/transparent.nvim`](https://github.com/xiyaowong/transparent.nvim)              | Transparent background                      |
 | [`jinh0/eyeliner.nvim`](https://github.com/jinh0/eyeliner.nvim)                            | Easier horizontal movement                  |
 | [`echasnovski/mini.indentscope`](https://github.com/echasnovski/mini.indentscope)          | Indentation indicator                       |
@@ -97,7 +97,6 @@ The plugins I use in my neovim config
 | [`RaafatTurki/hex.nvim`](https://github.com/RaafatTurki/hex.nvim)                          | hex editor                                  |
 | [`github/copilot.vim`](https://github.com/github/copilot.vim)                              | github copilot                              |
 | [`folke/trouble.nvim`](https://github.com/folke/trouble.vim)                               | trouble diagnostic window                   |
-| [`windwp/nvim-ts-autotag`](https://github.com/windwp/nvim-ts-autotag)                      | auto html tag completer                     |
 | [`j-hui/fidget.nvim`](https://github.com/j-hui/fidget.nvim)                                | clean notifs                                |
 
 
