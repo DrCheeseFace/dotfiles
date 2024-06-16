@@ -42,7 +42,7 @@ copying neovim config folder (nvim/) to ~/.config
 $ git clone https://github.com/DrCheeseFace/dotfiles.git ~/.config
 ```
 
-[make sure neovim is v0.9+](https://github.com/neovim/neovim/blob/master/INSTALL.md) <br>
+[make sure neovim is v.10+](https://github.com/neovim/neovim/blob/master/INSTALL.md) <br>
 Theres an issue with loading vimdoc sometimes due to nvims default vimscript 
 parser and treesitters one. This caused longer boot times.    
 
@@ -168,6 +168,30 @@ The plugins I use in my neovim config
 
 <br></br>
 
+## TMUX 👾
+
+This is a customized TMUX configuration for a productive and aesthetically pleasing terminal experience.
+(this was ai generated text lmao)
+<br> 
+    Pretty minimal. Just check the tmux.conf file.
+
+### Plugins
+
+The configuration includes several plugins managed by [Tmux Plugin Manager (TPM)](https://github.com/tmux-plugins/tpm). The listed plugins are:
+### TPM Installation
+
+[Tmux Plugin Manager (TPM)](https://github.com/tmux-plugins/tpm) is used as the plugin manager for tmux
+
+| Plugin                                                                          | Description                      |
+| -----------------------------------------------------------------------------   | -------------------------------- |
+| [`tmux-plugins/tpm`](https://github.com/tmux-plugins/tpm)                       | Tmux Plugin Manager              |
+| [`tmux-plugins/tmux-sensible`](https://github.com/tmux-plugins/tmux-sensible)   | Sensible configurations for TMUX |
+| [`tmux-plugins/tmux-resurrect`](https://github.com/tmux-plugins/tmux-resurrect) | save sessions                    |
+
+![ims of my dope ass terminal setup](https://github.com/DrCheeseFace/neovimAndTemux/blob/main/rice.jpg?raw=true)
+
+<br></br>
+
 ## Zellij 🖥️
 
 This is a customized Zellij configuration with themes and UI modifications.
@@ -209,45 +233,3 @@ default_layout "compact"
 
 ```
 
-## TMUX 👾
-
-This is a customized TMUX configuration for a productive and aesthetically pleasing terminal experience.
-(this was ai generated text lmao)
-
-### Configuration Settings
-
-| Setting                                   | Description                                 |
-| ----------------------------------------- | ------------------------------------------- |
-| `setw -g mouse on`                        | Enable mouse support within TMUX            |
-| `set -s default-terminal 'tmux-256color'` | Set the default terminal to 'tmux-256color' |
-
-### Plugins
-
-The configuration includes several plugins managed by [Tmux Plugin Manager (TPM)](https://github.com/tmux-plugins/tpm). The listed plugins are:
-### TPM Installation
-
-[Tmux Plugin Manager (TPM)](https://github.com/tmux-plugins/tpm) is used as the plugin manager for tmux
-
-
-| Plugin                                                                        | Description                      |
-| ----------------------------------------------------------------------------- | -------------------------------- |
-| [`tmux-plugins/tpm`](https://github.com/tmux-plugins/tpm)                     | Tmux Plugin Manager              |
-| [`tmux-plugins/tmux-sensible`](https://github.com/tmux-plugins/tmux-sensible) | Sensible configurations for TMUX |
-| [`dracula/tmux`](https://github.com/dracula/tmux)                             | Dracula theme for TMUX           |
-
-### Dracula Theme Customizations
-
-The Dracula theme is customized with additional features. The following configurations are applied:
-
-| Dracula Setting            | Value                  |
-| -------------------------- | ---------------------- |
-| `@dracula-plugins`         | "battery weather time" |
-| `@dracula-show-powerline`  | true                   |
-| `@dracula-show-fahrenheit` | false                  |
-| `@dracula-military-time`   | true                   |
-
-
-
-## TMUX example
-
-![ims of my dope ass terminal setup](https://github.com/DrCheeseFace/neovimAndTemux/blob/main/rice.jpg?raw=true)
