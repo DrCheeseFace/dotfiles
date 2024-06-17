@@ -49,6 +49,7 @@ require("mason-lspconfig").setup({
     }
 })
 
+require("luasnip.loaders.from_vscode").lazy_load()
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
 cmp.setup({
