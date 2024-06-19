@@ -179,11 +179,12 @@ The configuration includes several plugins managed by [Tmux Plugin Manager (TPM)
 
 [Tmux Plugin Manager (TPM)](https://github.com/tmux-plugins/tpm) is used as the plugin manager for tmux
 
-| Plugin                                                                          | Description                      |
-| -----------------------------------------------------------------------------   | -------------------------------- |
-| [`tmux-plugins/tpm`](https://github.com/tmux-plugins/tpm)                       | Tmux Plugin Manager              |
-| [`tmux-plugins/tmux-sensible`](https://github.com/tmux-plugins/tmux-sensible)   | Sensible configurations for TMUX |
-| [`tmux-plugins/tmux-resurrect`](https://github.com/tmux-plugins/tmux-resurrect) | save sessions                    |
+| Plugin                                                                                  | Description                      |
+| -----------------------------------------------------------------------------           | -------------------------------- |
+| [`tmux-plugins/tpm`](https://github.com/tmux-plugins/tpm)                               | Tmux Plugin Manager              |
+| [`tmux-plugins/tmux-sensible`](https://github.com/tmux-plugins/tmux-sensible)           | Sensible configurations for TMUX |
+| [`tmux-plugins/tmux-resurrect`](https://github.com/tmux-plugins/tmux-resurrect)         | save sessions                    |
+| [`niksingh710/minimal-tmux-status`](https://github.com/niksingh710/minimal-tmux-status) | minimal status line              |
 
 ![ims of my dope ass terminal setup](https://github.com/DrCheeseFace/neovimAndTemux/blob/main/rice.jpg?raw=true)
 
