@@ -45,7 +45,6 @@ local plugins = {
             "hrsh7th/cmp-nvim-lsp",
             "hrsh7th/cmp-buffer",
             "hrsh7th/cmp-path",
-            "hrsh7th/cmp-cmdline",
             "hrsh7th/nvim-cmp",
             "L3MON4D3/LuaSnip",
             "saadparwaiz1/cmp_luasnip",
@@ -74,8 +73,6 @@ local plugins = {
     "mbbill/undotree",
     --vim git
     "tpope/vim-fugitive",
-    --hex editor
-    "RaafatTurki/hex.nvim",
     --surrouding text
     "echasnovski/mini.surround",
     -- word highlighting
@@ -83,7 +80,6 @@ local plugins = {
     --commenting
     "numToStr/Comment.nvim",
     --horizontal highlighting when using 'f
-
     "jinh0/eyeliner.nvim",
     --markdown previewer
     {

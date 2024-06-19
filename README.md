@@ -93,7 +93,6 @@ The plugins I use in my neovim config
 | [`echasnovski/mini.cursorword`](https://github.com/echasnovski/mini.cursorword)            | highlights word under cursor                |
 | [`stevearc/oil.nvim`](https://github.com/stevearc/oil.nvim)                                | file management                             |
 | [`nvim-tree/nvim-web-devicons`](https://github.com/nvim-tree/nvim-web-devicons)            | icons :3                                    |
-| [`RaafatTurki/hex.nvim`](https://github.com/RaafatTurki/hex.nvim)                          | hex editor                                  |
 | [`github/copilot.vim`](https://github.com/github/copilot.vim)                              | github copilot                              |
 | [`folke/trouble.nvim`](https://github.com/folke/trouble.vim)                               | trouble diagnostic window                   |
 | [`j-hui/fidget.nvim`](https://github.com/j-hui/fidget.nvim)                                | clean notifs                                |
