@@ -1,6 +1,5 @@
 require("lualine").setup({
     options = {
-        theme = 'eldritch',
         section_separators = { "", "" },
         component_separators = { "", "" },
     },
@@ -14,6 +13,6 @@ require("lualine").setup({
     },
 })
 
-vim.cmd [[colorscheme eldritch]]
+vim.cmd("colorscheme kanagawa")
 vim.api.nvim_set_hl(0, "LineNr", { fg = "white" })
 vim.api.nvim_set_hl(0, "Comment", { fg = "grey" })

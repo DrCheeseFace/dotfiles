@@ -14,7 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
     --themes
     {
-        "eldritch-theme/eldritch.nvim",
+        "rebelot/kanagawa.nvim",
         lazy = false,
         priority = 1000,
         opts = { transparent = true },

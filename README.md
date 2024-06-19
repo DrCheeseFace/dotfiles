@@ -85,7 +85,7 @@ The plugins I use in my neovim config
 | [`neovim/nvim-lspconfig`](https://github.com/neovim/nvim-lspconfig)                        | Configuration for built-in LSP              |
 | [`hrsh7th/nvim-cmp`](https://github.com/hrsh7th/nvim-cmp)                                  | Autocompletion plugin                       |
 | [`iamcco/markdown-preview.nvim`](https://github.com/iamcco/markdown-preview.nvim)          | Markdown previewer                          |
-| [`eldritch-theme/eldritch.nvim`](https://github.com/eldritch-theme/eldritch.nvim)          | Nice theme                                  |
+| [`rebelot/kanagawa.nvim`](https://github.com/rebelot/kanagawa.nvim)                        | Nice theme                                  |
 | [`nvim-lualine/lualine.nvim`](https://github.com/nvim-lualine/lualine.nvim)                | Statusline                                  |
 | [`jinh0/eyeliner.nvim`](https://github.com/jinh0/eyeliner.nvim)                            | Easier horizontal movement                  |
 | [`echasnovski/mini.indentscope`](https://github.com/echasnovski/mini.indentscope)          | Indentation indicator                       |
