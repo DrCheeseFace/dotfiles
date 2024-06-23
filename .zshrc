@@ -51,5 +51,6 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:*' fzf-preview 'ls --color $realpath'
 
 alias ls='ls --color'
-
+export PATH="$PATH:/mnt/c/Windows/System32"
+export PATH="$PATH:/mnt/c/Windows"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
