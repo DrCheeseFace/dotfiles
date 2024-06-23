@@ -1,5 +1,5 @@
 
-<h1 align="center">My Neovim, Tmux and Zellij configs!</h1>
+<h1 align="center">My Neovim, Tmux and zsh configs!</h1>
 
 <div align="center">
  
@@ -15,7 +15,7 @@
  - [x] vimdoc no work (´•╭╮•`) 
 - [x] add functionality to automatically sync plugins after making changes to packer.lua (switched to lazy)
 <!-- # 📝 TODO ✍️ -->
-![ims of my dope ass terminal setup](./zellij.jpg)
+![ims of my dope ass terminal setup](./bruh.png)
 <br></br>
 ## Vim 🦆
 ### Installation guide
@@ -186,48 +186,21 @@ The configuration includes several plugins managed by [Tmux Plugin Manager (TPM)
 | [`tmux-plugins/tmux-resurrect`](https://github.com/tmux-plugins/tmux-resurrect)         | save sessions                    |
 | [`niksingh710/minimal-tmux-status`](https://github.com/niksingh710/minimal-tmux-status) | minimal status line              |
 
-![ims of my dope ass terminal setup](https://github.com/DrCheeseFace/neovimAndTemux/blob/main/rice.jpg?raw=true)
+![ims of my dope ass terminal setup](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTdwczUyM3Q3MWsyanVsNnlzYTZjY2FrYzhtNm1iaW11NDR2bjY3OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3pTtbLJ7Jd0YM/giphy.webp)
 
-<br></br>
-
-## Zellij 🖥️
-
-This is a customized Zellij configuration with themes and UI modifications.
-
-- [Tokyo Night Dark theme](https://github.com/zellij-org/zellij/blob/main/zellij-utils/assets/themes/tokyo-night-dark.kdl)
-- rounded pane corners
-- compact layout
-
-### [Tokyo Night Dark](https://github.com/zellij-org/zellij/blob/main/zellij-utils/assets/themes/tokyo-night-dark.kdl)
-
-```plaintext
-pane_frames false
-
-themes{
-  tokyo-night-dark {
-          fg 169 177 214
-              bg 26 27 38
-              black 56 62 90
-              red 249 51 87
-              green 158 206 106
-              yellow 224 175 104
-              blue 122 162 247
-              magenta 187 154 247
-              cyan 42 195 222
-              white 192 202 245
-              orange 255 158 100
-      }
-  }
-}
-ui {
-    pane_frames {
-        rounded_corners true
-    }
-}
-
-theme "tokyo-night-dark"
-
-default_layout "compact"
-
+### Random stuff for the next time i migrate
+getchu some zsh and use tha .zshrc file in the repo
+```
+sudo apt-get install zsh
+chsh -s $(which zsh)
 ```
 
+ADD THIS SHIT TO /etc/wsl.conf !!!! FIX FOR SLOW ASSSS COMPLETIONS
+```
+[interop]
+appendWindowsPath = false
+```
+install fzf via the repo 
+```
+and run ./install
+```
