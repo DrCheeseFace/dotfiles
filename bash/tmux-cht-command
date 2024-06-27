@@ -1,5 +1,6 @@
 ffmpeg
 bash
+tmux
 find
 man
 tldr
