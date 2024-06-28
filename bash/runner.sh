@@ -1,7 +1,8 @@
 #!/usr/bin/env zsh 
 
 #specify a command here v
-command='cargo test'
+# command='cargo build'
+command='cargo build && ~/.config/bash/gdber.sh "//breakpoint" && gdb --tui -x /tmp/gdber.gdb -ex run target/debug/leet '
 
 if tmux list-windows | grep -q "runner"; then
     tmux select-window -t ":runner"
@@ -10,8 +11,8 @@ else
 fi
 
 
-tmux send-keys -t ":runner" "cowsay -e ^^  specify a command at ~/.config/bash/runner.sh!"  C-m
-# tmux send-keys -t ":runner" "$command"  C-m
+# tmux send-keys -t ":runner" "cowsay -e ^^  specify a command at ~/.config/bash/runner.sh!"  C-m
+tmux send-keys -t ":runner" "$command"  C-m
 
 
 # specific pane switching
