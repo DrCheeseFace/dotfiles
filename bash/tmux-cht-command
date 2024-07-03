@@ -1,4 +1,5 @@
 ffmpeg
+gdb
 bash
 tmux
 find
