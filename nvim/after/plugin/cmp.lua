@@ -43,6 +43,12 @@ require("mason-lspconfig").setup({
                         diagnostics = {
                             globals = { "vim", "it", "describe", "before_each", "after_each" },
                         }
+                    },
+                    ["rust-analyzer"] = {
+                        -- THIS ISNT DEFAULT??????
+                        diagnostics = {
+                            enable = true,
+                        }
                     }
                 }
             }
