@@ -7,14 +7,11 @@ source "${ZINIT_HOME}/zinit.zsh"
 alias nvim="/opt/nvim-linux64/bin/nvim"
 alias temo="~/.config/bash/temo.sh"
 
-
 # plugins
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions 
 zinit light zsh-users/zsh-autosuggestions 
 zinit light Aloxaf/fzf-tab
-
-
 
 autoload -U compinit && compinit
 
@@ -45,3 +42,5 @@ export PATH="$PATH:/mnt/c/Windows/System32"
 export PATH="$PATH:/mnt/c/Windows"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(starship init zsh)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
