@@ -3,3 +3,4 @@ require("oil").setup()
 require("trouble").setup {}
 require("mini.surround").setup {}
 require("Comment").setup()
+require("fidget").setup({})
