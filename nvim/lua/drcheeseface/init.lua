@@ -14,3 +14,6 @@ autocmd('LspAttach', {
         vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
     end
 })
+
+vim.api.nvim_set_keymap('n', '<leader>vd', ':lua vim.diagnostic.open_float()<CR>', { noremap = true, silent = true })
+

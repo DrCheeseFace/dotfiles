@@ -71,12 +71,12 @@ local plugins = {
     },
     --an undotree
     "mbbill/undotree",
+    --context
+    "romgrk/nvim-treesitter-context",
     --vim git
     "tpope/vim-fugitive",
     --surrouding text
     "echasnovski/mini.surround",
-    -- word highlighting
-    "echasnovski/mini.cursorword",
     --commenting
     "numToStr/Comment.nvim",
     --horizontal highlighting when using 'f

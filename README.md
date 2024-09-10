@@ -88,7 +88,6 @@ The plugins I use in my neovim config
 | [`rebelot/kanagawa.nvim`](https://github.com/rebelot/kanagawa.nvim)                        | Nice theme                                  |
 | [`nvim-lualine/lualine.nvim`](https://github.com/nvim-lualine/lualine.nvim)                | Statusline                                  |
 | [`jinh0/eyeliner.nvim`](https://github.com/jinh0/eyeliner.nvim)                            | Easier horizontal movement                  |
-| [`echasnovski/mini.indentscope`](https://github.com/echasnovski/mini.indentscope)          | Indentation indicator                       |
 | [`echasnovski/mini.surround`](https://github.com/echasnovski/mini.surround)                | surrounding text shortcuts                  |
 | [`echasnovski/mini.cursorword`](https://github.com/echasnovski/mini.cursorword)            | highlights word under cursor                |
 | [`stevearc/oil.nvim`](https://github.com/stevearc/oil.nvim)                                | file management                             |
@@ -96,6 +95,7 @@ The plugins I use in my neovim config
 | [`github/copilot.vim`](https://github.com/github/copilot.vim)                              | github copilot                              |
 | [`folke/trouble.nvim`](https://github.com/folke/trouble.vim)                               | trouble diagnostic window                   |
 | [`j-hui/fidget.nvim`](https://github.com/j-hui/fidget.nvim)                                | clean notifs                                |
+| [`romgrk/nvim-treesitter-context`](https://github.com/romgrk/nvim-treesitter-context)      | shows context                               |
 
 
 </details>
