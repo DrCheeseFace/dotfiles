@@ -109,8 +109,8 @@ The plugins I use in my neovim config
 | ---- | ------------ | ------------------------------------------------------------- |
 | n    | `<C-d>`      | Scroll half a screen down and reposition cursor to the center |
 | n    | `<C-u>`      | Scroll half a screen up and reposition cursor to the center   |
-| n    | `<leader>u`  | Open undotree                                                 |
-| n    | `<leader>ts` | Horizontal split to vertical split (mostly for git fugitive)  |
+| n    | `<leader>u`  | toggle undotree                                               |
+| n    | `<leader>pv` | Oil float window                                              |
 | v    | `J`          | Move selected lines down                                      |
 | v    | `K`          | Move selected lines up                                        |
 | n, v | `sa`         | Add surrounding character                                     |
