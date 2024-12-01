@@ -71,8 +71,6 @@ local plugins = {
     },
     --an undotree
     "mbbill/undotree",
-    --context
-    "romgrk/nvim-treesitter-context",
     --vim git
     "tpope/vim-fugitive",
     --surrouding text
