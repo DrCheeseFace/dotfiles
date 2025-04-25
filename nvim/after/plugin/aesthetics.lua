@@ -13,6 +13,8 @@ require("lualine").setup({
     },
 })
 
-vim.cmd("colorscheme kanagawa")
-vim.api.nvim_set_hl(0, "LineNr", { fg = "white" })
+
+vim.cmd.colorscheme('kanagawa')
+
+vim.api.nvim_set_hl(0, "LineNr", {})
 vim.api.nvim_set_hl(0, "Comment", { fg = "grey" })
