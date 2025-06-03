@@ -10,11 +10,6 @@
 
 </div>
 
-# 🦟 BUGS! 🐛
- - [x] packer needs a :so command everytime you want to run packer commands
- - [x] vimdoc no work (´•╭╮•`) 
-- [x] add functionality to automatically sync plugins after making changes to packer.lua (switched to lazy)
-<!-- # 📝 TODO ✍️ -->
 ![ims of my dope ass terminal setup](./bruh.png)
 <br></br>
 ## Vim 🦆
