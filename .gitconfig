@@ -1,0 +1,39 @@
+[branch]
+  sort = -committerdate
+[tag]
+  sort = version:refname
+[init]
+  defaultBranch = main
+[diff]
+  algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
+[fetch]
+  prune = true
+  pruneTags = true
+  all = true
+[column]
+  ui = auto
+[user]
+	email = tharun@ctrlprint.se
+	name = tharun11
+[core]
+	autocrlf = false
+	editor = /opt/nvim-linux64/bin/nvim
+  pager = batcat -p
+  symlinks = true 
+[push]
+  default = simple
+  autoSetupRemote = true
+[color]
+  ui = auto
+[alias]
+  changed = "!f() { git diff ORIG_HEAD.. \"$@\"; }; f"
+  lg = log --graph --decorate 
+  df = "!f() { git diff > /tmp/diff.diff && /opt/nvim-linux64/bin/nvim /tmp/diff.diff ;}; f" 
+  amend = commit --amend --no-edit 
+  c = checkout  
+  uncommit = reset HEAD~1
+  cob = !git checkout $(git branch | fzf)
+

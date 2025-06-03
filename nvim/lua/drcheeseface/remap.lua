@@ -14,3 +14,13 @@ vim.keymap.set("n", "<C-k>", "<cmd>cprev<CR>zz")
 
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
+
+local function run_go_test()
+  local dir = vim.fn.expand('%:p:h')
+  local word = vim.fn.expand('<cword>')
+  local test_command = string.format('go test -tags test -run ^%s$', word)
+  print("running ->", test_command)
+  vim.cmd(string.format('rightbelow vsplit | terminal bash -c "cd %s && %s"', dir, test_command))
+end
+
+vim.keymap.set("n", "<leader>gt", run_go_test)
