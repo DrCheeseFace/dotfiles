@@ -87,11 +87,7 @@ local plugins = {
   -- tree sitter context
   -- "nvim-treesitter/nvim-treesitter-context"
   -- TEMP GOOFY SCREENKEY SHIZZ
-  {
-    "NStefan002/screenkey.nvim",
-    lazy = false,
-    version = "*",
-  },
+  "sakhnik/nvim-gdb",
 }
 
 local opts = {}

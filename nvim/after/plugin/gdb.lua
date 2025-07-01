@@ -1,0 +1,7 @@
+vim.keymap.set("n", "<leader>db", ":GdbBreakpointToggle<CR>")
+vim.keymap.set("n", "<leader>ds", ":GdbStep<CR>")
+vim.keymap.set("n", "<leader>dn", ":GdbNext<CR>")
+vim.keymap.set("n", "<leader>df", ":GdbFinish<CR>")
+vim.keymap.set("n", "<leader>dc", ":GdbContinue<CR>")
+vim.keymap.set("n", "<leader>di", ":GdbInterrupt<CR>")
+vim.keymap.set("n", "<leader>dr", ":GdbRun<CR>")
