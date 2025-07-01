@@ -7,9 +7,7 @@ source "${ZINIT_HOME}/zinit.zsh"
 #custom sources
 alias nvim="/opt/nvim-linux64/bin/nvim"
 alias temo="~/.config/bash/temo.sh"
-alias golangci-lint="/home/tharun/go/bin/golangci-lint"
-alias fd="fdfind"
-
+alias ccd="~/.config/bash/supercd.sh"
 
 # plugins
 zinit light zsh-users/zsh-syntax-highlighting

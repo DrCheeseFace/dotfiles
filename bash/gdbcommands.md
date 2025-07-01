@@ -8,7 +8,7 @@
 | c             | Continue                              |
 | fin           | Finish current function call and stop |
 | n             | Next                                  |
-| s             | Step into  function                   |
+| s             | Step into function                    |
 | break main:23 | Break at line number                  |
 | break func    | Break at function                     |
 
