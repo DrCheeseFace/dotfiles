@@ -16,6 +16,7 @@ end)
 vim.keymap.set("n", "<leader>gc", dap.continue)
 vim.keymap.set("n", "<leader>gn", dap.step_over)
 vim.keymap.set("n", "<leader>go", dap.step_out)
+vim.keymap.set("n", "<leader>gi", dap.step_into)
 vim.keymap.set("n", "<leader>gl", dap.step_back)
 vim.keymap.set("n", "<leader>gr", dap.restart)
 
@@ -40,7 +41,8 @@ dap.adapters.codelldb = {
         executable = {
                 command = bin_locations .. "codelldb",
                 args = { "--port", "${port}" },
-        },
+        }
+
 }
 
 dap.configurations.cpp = {
@@ -49,8 +51,24 @@ dap.configurations.cpp = {
                 type = "codelldb",
                 request = "launch",
                 program = function()
-                        return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+                        local compile_commands = { -- set this to whatever the heart desires
+                                "make",
+                                "debug"
+                        }
+                        print("Building...")
+                        local out = vim.fn.system(compile_commands)
+
+                        print("OUTPUT v")
+                        print(out)
+                        print("OUTPUT ^")
+
+                        print("Running debug...")
+                        return (vim.fn.getcwd() .. "/main.out") -- set this for convinience sake
+                        -- return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
                 end,
+                -- env = {
+                --         ["LD_LIBRARY_PATH"] = "./mahc/target/debug/",
+                -- },
                 cwd = "${workspaceFolder}",
                 stopOnEntry = false,
                 runInTerminal = false,
