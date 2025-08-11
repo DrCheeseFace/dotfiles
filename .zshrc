@@ -55,3 +55,6 @@ export PATH=$PATH:$(go env GOPATH)/bin
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 . "/home/tharun/.deno/env"
+
+# Created by `pipx` on 2025-08-10 13:56:50
+export PATH="$PATH:/home/tharun/.local/bin"

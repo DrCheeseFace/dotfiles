@@ -19,6 +19,8 @@ vim.keymap.set("n", "<leader>go", dap.step_out)
 vim.keymap.set("n", "<leader>gi", dap.step_into)
 vim.keymap.set("n", "<leader>gl", dap.step_back)
 vim.keymap.set("n", "<leader>gr", dap.restart)
+vim.keymap.set("n", "<leader>k", dap.up)
+vim.keymap.set("n", "<leader>j", dap.down)
 
 
 dap.listeners.before.attach.dapui_config = function()
@@ -53,7 +55,9 @@ dap.configurations.cpp = {
                 program = function()
                         local compile_commands = { -- set this to whatever the heart desires
                                 "make",
-                                "debug"
+                                "build-test"
+                                -- "build"
+                                -- "debug"
                         }
                         print("Building...")
                         local out = vim.fn.system(compile_commands)
@@ -63,7 +67,8 @@ dap.configurations.cpp = {
                         print("OUTPUT ^")
 
                         print("Running debug...")
-                        return (vim.fn.getcwd() .. "/main.out") -- set this for convinience sake
+                        return (vim.fn.getcwd() .. "/test.out") -- set this for convinience sake
+                        -- return (vim.fn.getcwd() .. "/main.out") -- set this for convinience sake
                         -- return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
                 end,
                 -- env = {
@@ -86,7 +91,7 @@ require("dapui").setup({
                                 { id = "watches", size = 0.50 },
                         },
                         position = "left",
-                        size = 50,
+                        size = 70,
                 },
                 {
                         elements = {
