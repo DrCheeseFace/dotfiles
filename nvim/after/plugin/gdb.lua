@@ -55,8 +55,11 @@ dap.configurations.cpp = {
                 program = function()
                         local compile_commands = { -- set this to whatever the heart desires
                                 "make",
-                                "build-test"
-                                -- "build"
+                                -- "build-test"
+                                -- "test"
+                                "build-debug"
+                                -- "build-debug-spacers"
+                                -- "build-debugger-preload"
                                 -- "debug"
                         }
                         print("Building...")
@@ -68,12 +71,21 @@ dap.configurations.cpp = {
 
                         print("Running debug...")
                         return (vim.fn.getcwd() .. "/test.out") -- set this for convinience sake
+                        -- return (vim.fn.getcwd() .. "/bin/spacers") -- set this for convinience sake
                         -- return (vim.fn.getcwd() .. "/main.out") -- set this for convinience sake
                         -- return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
                 end,
                 -- env = {
-                --         ["LD_LIBRARY_PATH"] = "./mahc/target/debug/",
+                --         -- ["LD_LIBRARY_PATH"] = "./mahc/target/debug/",
+                --         ["LD_PRELOAD"] = "./mrd_debug.so",
                 -- },
+
+                args = {
+                        -- "mrs_strings.h"
+                        "README.md"
+                        -- "LICENSE"
+                        -- "--check", "---help"
+                },
                 cwd = "${workspaceFolder}",
                 stopOnEntry = false,
                 runInTerminal = false,

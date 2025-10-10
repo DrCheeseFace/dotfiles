@@ -90,7 +90,9 @@ local plugins = {
                 ft = { "markdown" },
         },
         "charlespascoe/vim-go-syntax",
-        { "mfussenegger/nvim-dap", dependencies = { "theHamsta/nvim-dap-virtual-text", "nvim-neotest/nvim-nio", "rcarriga/nvim-dap-ui" } }
+        { "mfussenegger/nvim-dap", dependencies = { "theHamsta/nvim-dap-virtual-text", "nvim-neotest/nvim-nio", "rcarriga/nvim-dap-ui" } },
+
+        "leoluz/nvim-dap-go",
 }
 
 local opts = {}

@@ -16,11 +16,11 @@
 [column]
   ui = auto
 [user]
-	email = tharun@ctrlprint.se
+        email = 47290042+DrCheeseFace@users.noreply.github.com
 	name = tharun11
 [core]
 	autocrlf = false
-	editor = /opt/nvim-linux64/bin/nvim
+	editor = nvim 
   pager = batcat -p
   symlinks = true 
 [push]

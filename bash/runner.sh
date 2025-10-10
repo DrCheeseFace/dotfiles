@@ -4,7 +4,11 @@
 # command='cowsay -e ^^  specify a command at ~/.config/bash/runner.sh!'
 # command='cargo run -- -k'
 # command='cargo build && ./target/debug/dukit -l'
-# command='   make'
+# command='   make test'
+# command='   make debug'
+# command='  make  build-debug-spacers && ./bin/spacers LICENSE --check'
+# command='   python3 titanic.py'
+command='   python3 main.py'
 # command='   npm run prettier:write'
 # command='npm run start'
 # command='go run hello.go'
@@ -32,7 +36,7 @@
 
 # debugger things 
 # command='cargo build && ~/.config/bash/gdber.sh "//breakpoint" && rust-gdb --tui -x /tmp/gdber.gdb -ex run target/debug/mahc'
-command='make build && ~/.config/bash/gdber.sh "//breakpoint" && gdb --tui -x /tmp/gdber.gdb -ex run main.out'
+# command='make build && ~/.config/bash/gdber.sh "//breakpoint" && gdb --tui -x /tmp/gdber.gdb -ex run main.out'
 # command='gcc -o q2.out q2.c -lm -g && valgrind ./q2.out --leak-check=full --show-leak-kings=all --track-origins=yes --verbose > log.txt 2>&1'
 # command='gcc -o q1.out q1.c -lm -g -fsanitize=address && ./q1.out'
 
