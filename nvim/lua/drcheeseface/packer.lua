@@ -12,20 +12,11 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-        --themes
-        {
-                "rebelot/kanagawa.nvim",
-                lazy = false,
-                priority = 1000,
-                opts = { transparent = true },
-        },
         --status bar
         {
                 'nvim-lualine/lualine.nvim',
                 dependencies = { 'nvim-tree/nvim-web-devicons' }
         },
-        -- github copilot
-        -- "github/copilot.vim",
         --indent guidline highlighting
         "echasnovski/mini.indentscope",
         --file management with devicons
@@ -89,7 +80,7 @@ local plugins = {
                 end,
                 ft = { "markdown" },
         },
-        "charlespascoe/vim-go-syntax",
+        -- "charlespascoe/vim-go-syntax",
         { "mfussenegger/nvim-dap", dependencies = { "theHamsta/nvim-dap-virtual-text", "nvim-neotest/nvim-nio", "rcarriga/nvim-dap-ui" } },
         "leoluz/nvim-dap-go",
 }

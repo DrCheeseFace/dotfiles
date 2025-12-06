@@ -42,6 +42,9 @@ alias ls='ls --color'
 
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:/home/tharun/go/bin"
+export PATH="$PATH:/home/tharun/opt/cross/bin"
+
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(starship init zsh)"
@@ -59,5 +62,5 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:/home/tharun/.local/bin"
 
 # Set nvim as the default terminal editor for Zsh
-export EDITOR=nvim
-export VISUAL=nvim
+export EDITOR=vim
+export VISUAL=vim

@@ -55,12 +55,7 @@ dap.configurations.cpp = {
                 program = function()
                         local compile_commands = { -- set this to whatever the heart desires
                                 "make",
-                                -- "build-test"
-                                -- "test"
-                                "build-debug"
-                                -- "build-debug-spacers"
-                                -- "build-debugger-preload"
-                                -- "debug"
+                                "build-debug",
                         }
                         print("Building...")
                         local out = vim.fn.system(compile_commands)
@@ -70,27 +65,26 @@ dap.configurations.cpp = {
                         print("OUTPUT ^")
 
                         print("Running debug...")
-                        return (vim.fn.getcwd() .. "/test.out") -- set this for convinience sake
-                        -- return (vim.fn.getcwd() .. "/bin/spacers") -- set this for convinience sake
-                        -- return (vim.fn.getcwd() .. "/main.out") -- set this for convinience sake
+                        return (vim.fn.getcwd() .. "/test.out") -- set this for convinience sakeb
                         -- return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
                 end,
                 -- env = {
-                --         -- ["LD_LIBRARY_PATH"] = "./mahc/target/debug/",
-                --         ["LD_PRELOAD"] = "./mrd_debug.so",
+                        --         -- ["LD_LIBRARY_PATH"] = "./mahc/target/debug/",
+                        --         ["LD_PRELOAD"] = "./mrd_debug.so",
                 -- },
 
-                args = {
+                -- args = {
                         -- "mrs_strings.h"
-                        "README.md"
+                        -- "README.md"
                         -- "LICENSE"
                         -- "--check", "---help"
-                },
+                -- },
                 cwd = "${workspaceFolder}",
                 stopOnEntry = false,
                 runInTerminal = false,
         },
 }
+
 
 dap.configurations.c = dap.configurations.cpp
 dap.configurations.rust = dap.configurations.cpp

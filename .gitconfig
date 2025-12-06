@@ -20,7 +20,7 @@
 	name = tharun11
 [core]
 	autocrlf = false
-	editor = nvim 
+	editor = vim 
   pager = batcat -p
   symlinks = true 
 [push]

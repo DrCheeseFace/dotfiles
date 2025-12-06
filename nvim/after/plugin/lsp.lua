@@ -31,7 +31,6 @@ require("mason-lspconfig").setup({
                                 capabilities = capabilities,
                         }
                 end,
-
                 ["lua_ls"] = function()
                         local lspconfig = require("lspconfig")
                         lspconfig.lua_ls.setup {
@@ -65,3 +64,4 @@ require("lspconfig").arduino_language_server.setup({
                 "-fqbn", "arduino:avr:uno"
         }
 })
+
