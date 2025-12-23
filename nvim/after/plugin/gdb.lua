@@ -2,7 +2,7 @@ local bin_locations = vim.fn.stdpath("data") .. "/mason/bin/"
 
 local dap = require("dap")
 local dapui = require("dapui")
-require("nvim-dap-virtual-text").setup({})
+-- require("nvim-dap-virtual-text").setup({}) // dafak
 require("dapui").setup()
 require("nvim-dap-virtual-text").setup({})
 
@@ -65,19 +65,19 @@ dap.configurations.cpp = {
                         print("OUTPUT ^")
 
                         print("Running debug...")
-                        return (vim.fn.getcwd() .. "/test.out") -- set this for convinience sakeb
+                        return (vim.fn.getcwd() .. "/build/debug/test.out") -- set this for convinience sakeb
                         -- return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
                 end,
                 -- env = {
-                        --         -- ["LD_LIBRARY_PATH"] = "./mahc/target/debug/",
-                        --         ["LD_PRELOAD"] = "./mrd_debug.so",
+                --         -- ["LD_LIBRARY_PATH"] = "./mahc/target/debug/",
+                --         ["LD_PRELOAD"] = "./mrd_debug.so",
                 -- },
 
                 -- args = {
-                        -- "mrs_strings.h"
-                        -- "README.md"
-                        -- "LICENSE"
-                        -- "--check", "---help"
+                -- "mrs_strings.h"
+                -- "README.md"
+                -- "LICENSE"
+                -- "--check", "---help"
                 -- },
                 cwd = "${workspaceFolder}",
                 stopOnEntry = false,

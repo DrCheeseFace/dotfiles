@@ -32,7 +32,7 @@ require("mason-lspconfig").setup({
                         }
                 end,
                 ["lua_ls"] = function()
-                        local lspconfig = require("lspconfig")
+                        local lspconfig = require("lspconfig") 
                         lspconfig.lua_ls.setup {
                                 capabilities = capabilities,
                                 settings = {
@@ -55,13 +55,12 @@ require("mason-lspconfig").setup({
 })
 
 
-require("lspconfig").arduino_language_server.setup({
-        cmd = {
-                "arduino-language-server",
-                "-clangd", "~/.local/share/nvim/mason/bin/clangd",
-                "-cli", "~/bin/arduino-cli",
-                "-cli-config", "$~/.arduino15/arduino-cli.yaml",
-                "-fqbn", "arduino:avr:uno"
-        }
-})
-
+-- require("lspconfig").arduino_language_server.setup({
+--         cmd = {
+--                 "arduino-language-server",
+--                 "-clangd", "~/.local/share/nvim/mason/bin/clangd",
+--                 "-cli", "~/bin/arduino-cli",
+--                 "-cli-config", "$~/.arduino15/arduino-cli.yaml",
+--                 "-fqbn", "arduino:avr:uno"
+--         }
+-- })

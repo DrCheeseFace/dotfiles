@@ -63,4 +63,6 @@ export PATH="$PATH:/home/tharun/.local/bin"
 
 # Set nvim as the default terminal editor for Zsh
 export EDITOR=vim
-export VISUAL=vim
+
+# lord help me if this breaks something in 100 years time and i forget i have this
+export MAKEFLAGS="-j$(nproc)"
