@@ -32,7 +32,7 @@ require("mason-lspconfig").setup({
                         }
                 end,
                 ["lua_ls"] = function()
-                        local lspconfig = require("lspconfig") 
+                        local lspconfig = require("lspconfig")
                         lspconfig.lua_ls.setup {
                                 capabilities = capabilities,
                                 settings = {

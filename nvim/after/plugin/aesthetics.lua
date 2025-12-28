@@ -1,19 +1,3 @@
-require("lualine").setup({
-        options = {
-                section_separators = { "", "" },
-                component_separators = { "", "" },
-        },
-        sections = {
-                lualine_c = {
-                        {
-                                'filename',
-                                path = 1,
-                        }
-                }
-        },
-})
-
-
 local Type = "#94DD8E"
 local Keyword = "blue"
 local Constant = "magenta"
@@ -71,4 +55,3 @@ set_hl("Constant", Constant)
 
 -- Comment
 set_hl("Comment", Comment)
-

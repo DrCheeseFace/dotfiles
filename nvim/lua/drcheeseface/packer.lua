@@ -12,16 +12,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-        --status bar
-        {
-                'nvim-lualine/lualine.nvim',
-                dependencies = { 'nvim-tree/nvim-web-devicons' }
-        },
-        --indent guidline highlighting
-        "echasnovski/mini.indentscope",
-        --file management with devicons
+        --file management
         "stevearc/oil.nvim",
-        "kyazdani42/nvim-web-devicons",
         --TROUBLE TROUBLE TROUBLE
         {
                 "folke/trouble.nvim",
@@ -33,16 +25,14 @@ local plugins = {
                 dependencies = {
                         "williamboman/mason.nvim",
                         "williamboman/mason-lspconfig.nvim",
-                        "hrsh7th/cmp-nvim-lsp",
-                        "hrsh7th/cmp-buffer",
-                        "hrsh7th/cmp-path",
                         "hrsh7th/nvim-cmp",
+                        "hrsh7th/cmp-nvim-lsp",
                         "L3MON4D3/LuaSnip",
                         "saadparwaiz1/cmp_luasnip",
-                        "j-hui/fidget.nvim",
-                        "rafamadriz/friendly-snippets",
+                        "hrsh7th/cmp-path",
                 },
         },
+        "j-hui/fidget.nvim",
         --the goat treesitter
         {
                 "nvim-treesitter/nvim-treesitter",
@@ -62,14 +52,8 @@ local plugins = {
         },
         --an undotree
         "mbbill/undotree",
-        --vim git
-        "tpope/vim-fugitive",
         --surrouding text
         "echasnovski/mini.surround",
-        --commenting
-        "numToStr/Comment.nvim",
-        --horizontal highlighting when using 'f
-        "jinh0/eyeliner.nvim",
         --markdown previewer
         {
                 "iamcco/markdown-preview.nvim",
@@ -80,9 +64,7 @@ local plugins = {
                 end,
                 ft = { "markdown" },
         },
-        -- "charlespascoe/vim-go-syntax",
         { "mfussenegger/nvim-dap", dependencies = { "theHamsta/nvim-dap-virtual-text", "nvim-neotest/nvim-nio", "rcarriga/nvim-dap-ui" } },
-        -- "leoluz/nvim-dap-go",
 }
 
 local opts = {}
