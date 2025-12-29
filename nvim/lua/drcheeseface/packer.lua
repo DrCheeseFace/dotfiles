@@ -17,38 +17,22 @@ local plugins = {
 		"stevearc/oil.nvim",
 		dependencies = "kyazdani42/nvim-web-devicons",
 	},
-	--format
+	--lsp
 	{
-		"stevearc/conform.nvim",
-		config = function()
-			require("conform").setup({
-				formatters_by_ft = {
-					c = { "clang-format" },
-					lua = { "stylua" },
-					javascript = { "prettier" },
-					typescript = { "prettier" },
-				},
-			})
-		end,
+		"neovim/nvim-lspconfig",
+		dependencies = {
+			"williamboman/mason.nvim",
+			"williamboman/mason-lspconfig.nvim",
+			"hrsh7th/cmp-nvim-lsp",
+			"hrsh7th/nvim-cmp",
+			"L3MON4D3/LuaSnip",
+			"saadparwaiz1/cmp_luasnip",
+			"ray-x/lsp_signature.nvim",
+		},
 	},
 
-	-- ctags
-	{
-		"ludovicchabant/vim-gutentags",
-		init = function()
-			vim.g.gutentags_ctags_exclude = {
-				"*.git",
-				"*.svg",
-				"*.xml",
-				"dist",
-				"bin",
-				"node_modules",
-				"vendor",
-				"*.min.js",
-				"*.min.css",
-			}
-		end,
-	},
+	--format
+	"stevearc/conform.nvim",
 	"j-hui/fidget.nvim",
 	--the goat treesitter
 	{

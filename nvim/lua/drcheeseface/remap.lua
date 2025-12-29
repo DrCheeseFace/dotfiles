@@ -34,25 +34,5 @@ local function toggle_quickfix()
 end
 
 vim.keymap.set("n", "<leader>gt", run_go_testing)
-
-vim.keymap.set("i", "<C-j>", function()
-	return vim.fn.pumvisible() == 1 and "<C-n>" or "<C-j>"
-end, { expr = true })
-vim.keymap.set("i", "<C-k>", function()
-	return vim.fn.pumvisible() == 1 and "<C-p>" or "<C-k>"
-end, { expr = true })
-vim.keymap.set("i", "<C-l>", function()
-	return vim.fn.pumvisible() == 1 and "<C-y>" or "<C-l>"
-end, { expr = true })
-
-vim.keymap.set("n", "gd", "<C-]>", { desc = "Go to Definition (Tags)" })
-vim.keymap.set("n", "gi", "g<C-]>", { desc = "Go to Implementation (Tags)" })
-vim.keymap.set("n", "<leader>vrn", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Rename" })
-
 vim.keymap.set("n", "[d", toggle_quickfix, { desc = "Toggle Quickfix Window" })
 
-vim.keymap.set("n", "<leader>xx", function()
-	vim.cmd("silent! make -s")
-	vim.cmd.copen()
-	vim.cmd("redraw!")
-end, { noremap = true, silent = true })

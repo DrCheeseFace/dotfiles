@@ -25,19 +25,9 @@ vim.keymap.set("n", "<leader>ps", function()
 		builtin.grep_string({ search = search })
 	end
 end)
-vim.keymap.set("n", "<leader>fr", function()
-	builtin.grep_string({ search = vim.fn.expand("<cword>") })
-end)
 
-vim.keymap.set("n", "<leader>fr", function()
-	require("telescope.builtin").grep_string({
-		search = vim.fn.expand("<cword>"),
-		-- Pass flags to ripgrep to ignore specific files
-		additional_args = function(args)
-			return vim.list_extend(args, { "--glob", "!tags" })
-		end,
-	})
-end)
+vim.keymap.set("n", "<leader>fr", require('telescope.builtin').lsp_references, { desc = "Find References" })
+
 vim.keymap.set("n", "<leader>gf", function()
 	require("telescope.builtin").current_buffer_fuzzy_find({
 		previewer = false,

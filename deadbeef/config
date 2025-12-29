@@ -95,12 +95,12 @@ output_plugin alsa
 playback.loop 1
 playback.volume.normalized 1.0000000
 playlist.current 0
-playlist.cursor.0 0
+playlist.cursor.0 5
 playlist.cursor.1 3
 playlist.cursor.2 0
 playlist.groups.spacing 4
 playlist.pin.groups 0
-playlist.scroll.0 0
+playlist.scroll.0 -5
 playlist.scroll.1 -3
 playlist.scroll.2 0
 playlist.scroll.cursorfollowplayback 1
@@ -112,8 +112,8 @@ prefwin.geometry.x 23
 prefwin.geometry.y 21
 resume.paused 1
 resume.playlist 0
-resume.position 5.7585468
-resume.track 0
+resume.position 180.37339
+resume.track 5
 streamer.bit_override 0
 streamer.samplerate 44100
 streamer.samplerate_mult_44 44100

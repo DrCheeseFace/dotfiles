@@ -40,14 +40,3 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.highlight.on_yank()
 	end,
 })
-
-vim.opt.omnifunc = "syntaxcomplete#Complete"
-vim.opt.tags:append("./tags;,tags")
-vim.opt.tags:append(vim.fn.expand("~/.config/.tags/tags"))
-vim.opt.completeopt = { "menu", "menuone", "noselect", "preview" }
-vim.opt.splitbelow = false
-vim.api.nvim_create_autocmd("CompleteDone", {
-	callback = function()
-		vim.cmd("pclose")
-	end,
-})
