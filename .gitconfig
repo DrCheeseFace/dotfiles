@@ -31,7 +31,7 @@
 [alias]
   changed = "!f() { git diff ORIG_HEAD.. \"$@\"; }; f"
   lg = log --graph --decorate 
-  df = "!f() { git diff > /tmp/diff.diff && /opt/nvim-linux64/bin/nvim /tmp/diff.diff ;}; f" 
+  df = "!f() { git diff > /tmp/diff.diff && vim /tmp/diff.diff ;}; f" 
   amend = commit --amend --no-edit 
   c = checkout  
   uncommit = reset HEAD~1

@@ -69,6 +69,47 @@ local plugins = {
 		"mfussenegger/nvim-dap",
 		dependencies = { "theHamsta/nvim-dap-virtual-text", "nvim-neotest/nvim-nio", "rcarriga/nvim-dap-ui" },
 	},
+	{
+		"lervag/vimtex",
+		dependencies = { "barreiroleo/ltex_extra.nvim" },
+		lazy = false,
+		tag = "v2.17",
+		init = function()
+			vim.g.vimtex_quickfix_mode = 0
+			vim.g.vimtex_view_method = "zathura"
+			vim.g.vimtex_view_automatic = 0
+			vim.g.vimtex_compiler_enabled = 1
+                        vim.g.vimtex_compiler_method = 'latexmk'
+			vim.g.vimtex_compiler_latexmk = {
+				build_dir = "",
+				callback = 1,
+				continuous = 1,
+				executable = "latexmk",
+				hooks = {},
+				options = {
+					"-shell-escape",
+					"-file-line-error",
+					"-synctex=1",
+					"-interaction=nonstopmode",
+				},
+			}
+			vim.g.vimtex_syntax_enabled = 1
+			vim.g.vimtex_syntax_conceal_disable = 1
+			vim.g.vimtex_compiler_latexmk_engines = {
+				_ = "-pdf",
+			}
+		end,
+	},
+	{
+		"nvim-telescope/telescope-bibtex.nvim",
+		dependencies = {
+			{ "nvim-telescope/telescope.nvim" },
+		},
+		init = function()
+			vim.keymap.set("n", "<leader>bb", "<cmd>Telescope bibtex<CR>", { desc = "search bibtex" })
+			require("telescope").load_extension("bibtex")
+		end,
+	},
 }
 
 local opts = {}

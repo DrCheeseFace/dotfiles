@@ -66,3 +66,7 @@ export EDITOR=vim
 
 # lord help me if this breaks something in 100 years time and i forget i have this
 export MAKEFLAGS="-j$(nproc)"
+
+export SHEBANG="#!/usr/bin/env bash"
+export PATH="$PATH:/home/tharun/Projects/zig"
+
