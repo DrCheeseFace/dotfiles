@@ -66,10 +66,6 @@ local plugins = {
 		ft = { "markdown" },
 	},
 	{
-		"mfussenegger/nvim-dap",
-		dependencies = { "theHamsta/nvim-dap-virtual-text", "nvim-neotest/nvim-nio", "rcarriga/nvim-dap-ui" },
-	},
-	{
 		"lervag/vimtex",
 		dependencies = { "barreiroleo/ltex_extra.nvim" },
 		lazy = false,

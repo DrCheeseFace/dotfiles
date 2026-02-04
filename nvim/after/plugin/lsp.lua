@@ -7,7 +7,7 @@ local cmp = require("cmp")
 local luasnip = require("luasnip")
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-local on_attach = function(client, bufnr)
+local on_attach = function(_, bufnr)
 	require("lsp_signature").on_attach({
 		bind = true,
 		handler_opts = { border = "rounded" },
@@ -33,6 +33,7 @@ vim.lsp.enable("clangd")
 
 vim.lsp.config("ltex", {
 	capabilities = capabilities,
+	filetypes = { "tex" },
 	on_attach = function(client, bufnr)
 		on_attach(client, bufnr)
 
@@ -110,11 +111,3 @@ vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "hover" })
 vim.keymap.set("n", "<leader>vrn", vim.lsp.buf.rename, { desc = "Rename" })
 vim.keymap.set("n", "<leader>vca", vim.lsp.buf.code_action, { desc = "code actions" })
 vim.keymap.set("n", "<leader>vd", vim.diagnostic.open_float, { desc = "show diagnostic" })
-
-local notify = vim.notify
-vim.notify = function(msg, ...)
-	if msg:match("position_encoding param is required") then
-		return
-	end
-	notify(msg, ...)
-end

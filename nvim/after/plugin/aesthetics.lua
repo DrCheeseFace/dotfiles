@@ -7,7 +7,6 @@ local NormalFG = "#FFFFFF"
 local NormalBG = "NONE"
 
 local NeutralFG = NormalFG
-local Punctuation = "cyan"
 
 local function set_hl(name, fg, bg, style)
         vim.api.nvim_set_hl(0, name, {
