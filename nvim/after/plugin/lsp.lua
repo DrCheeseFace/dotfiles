@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = { "lua_ls", "clangd" },
+	ensure_installed = { "lua_ls", "clangd", "denols" },
 })
 
 local cmp = require("cmp")
@@ -28,8 +28,18 @@ vim.lsp.enable("lua_ls")
 vim.lsp.config("clangd", {
 	capabilities = capabilities,
 	on_attach = on_attach,
+	cmd = {
+		"clangd",
+		"--header-insertion=never",
+	},
 })
 vim.lsp.enable("clangd")
+
+vim.lsp.config("ts_ls", {
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+vim.lsp.enable("ts_ls")
 
 vim.lsp.config("ltex", {
 	capabilities = capabilities,
@@ -101,6 +111,8 @@ require("conform").setup({
 	formatters_by_ft = {
 		c = { "clang-format" },
 		lua = { "stylua" },
+		javascript = { "deno_fmt" },
+		typescript = { "deno_fmt" },
 	},
 })
 
