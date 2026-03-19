@@ -7,6 +7,7 @@ source "${ZINIT_HOME}/zinit.zsh"
 #custom sources
 alias temo="~/.config/bash/temo.sh"
 alias ccd="~/.config/bash/supercd.sh"
+alias todo="rg "TODO" $(git rev-parse --show-toplevel)"
 
 # plugins
 zinit light zsh-users/zsh-syntax-highlighting
@@ -70,3 +71,11 @@ export MAKEFLAGS="-j$(nproc)"
 export SHEBANG="#!/usr/bin/env bash"
 export PATH="$PATH:/home/tharun/Projects/zig"
 
+
+# pnpm
+export PNPM_HOME="/home/tharun/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
