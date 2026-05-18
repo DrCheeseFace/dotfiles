@@ -1,0 +1,67 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", sans-serif;
+    font-size: 13px; 
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+}
+
+tooltip {
+    background: rgba(30, 30, 46, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+tooltip label {
+    color: #ffffff;
+}
+
+/* --- Workspaces --- */
+#workspaces button {
+    padding: 0 8px;
+    background: transparent;
+    color: #555555; 
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+
+#workspaces button.active {
+    color: #ffffff; 
+    border-bottom: 2px solid #ffffff; 
+    font-weight: bold;
+}
+
+#workspaces button.urgent {
+    color: #f7768e;
+}
+
+/* --- Modules --- */
+#clock,
+#custom-wifi,
+#battery,
+#pulseaudio {
+    padding: 0 10px;
+    margin: 2px 0;
+    background: transparent;
+    color: #ffffff;
+}
+
+/* Battery States */
+#battery.warning {
+    color: #ff9e64;
+}
+
+#battery.critical {
+    color: #f7768e;
+}
