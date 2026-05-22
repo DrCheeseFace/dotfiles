@@ -26,7 +26,7 @@
         }
     },
     "clock": {
-        "format": "{:%A %d/%m/%Y}",
+        "format": "{:%A %d/%m/%Y %H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "network": {
