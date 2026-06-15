@@ -31,6 +31,9 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
+vim.opt.completeopt = { "menuone", "noselect" }
+vim.opt.complete = { ".", "w", "b", "u", "t" }
+vim.opt.tags = "./tags;,"
 
 -- Highlight when yanking text
 vim.api.nvim_create_autocmd("TextYankPost", {

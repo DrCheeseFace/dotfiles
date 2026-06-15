@@ -17,20 +17,23 @@ local plugins = {
 		"stevearc/oil.nvim",
 		dependencies = "kyazdani42/nvim-web-devicons",
 	},
-	--lsp
+	--cmp ctags cscope
+	"hrsh7th/nvim-cmp",
+	"hrsh7th/cmp-buffer",
+	"quangnguyen30192/cmp-nvim-tags",
 	{
-		"neovim/nvim-lspconfig",
-		dependencies = {
-			"williamboman/mason.nvim",
-			"williamboman/mason-lspconfig.nvim",
-			"hrsh7th/cmp-nvim-lsp",
-			"hrsh7th/nvim-cmp",
-			"L3MON4D3/LuaSnip",
-			"saadparwaiz1/cmp_luasnip",
-			"ray-x/lsp_signature.nvim",
+		"dhananjaylatkar/cscope_maps.nvim",
+		opts = {
+			disable_maps = false,
+			skip_input_prompt = false,
+			cscope = {
+				db_file = "./cscope.out",
+				exec = "cscope",
+				picker = "telescope",
+				skip_picker_for_single_result = true,
+			},
 		},
 	},
-
 	--format
 	"stevearc/conform.nvim",
 	"j-hui/fidget.nvim",

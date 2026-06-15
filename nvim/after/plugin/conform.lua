@@ -1,5 +1,5 @@
 vim.keymap.set("n", "<leader>f", function()
-	require("conform").format({ async = true, lsp_fallback = true })
+	require("conform").format({ async = true, lsp_fallback = false })
 end, { desc = "Format buffer" })
 
 local conform = require("conform")

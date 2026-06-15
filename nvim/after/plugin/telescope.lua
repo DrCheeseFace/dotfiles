@@ -37,8 +37,6 @@ vim.keymap.set("n", "<leader>ps", function()
 	end
 end)
 
-vim.keymap.set("n", "<leader>fr", require("telescope.builtin").lsp_references, { desc = "Find References" })
-
 vim.keymap.set("n", "<leader>gf", function()
 	require("telescope.builtin").current_buffer_fuzzy_find({
 		previewer = false,

@@ -9,13 +9,13 @@ local NormalBG = "NONE"
 local NeutralFG = NormalFG
 
 local function set_hl(name, fg, bg, style)
-        vim.api.nvim_set_hl(0, name, {
-                fg = fg,
-                bg = bg or "NONE",
-                bold = style and style.bold or false,
-                italic = style and style.italic or false,
-                underline = style and style.underline or false,
-        })
+	vim.api.nvim_set_hl(0, name, {
+		fg = fg,
+		bg = bg or "NONE",
+		bold = style and style.bold or false,
+		italic = style and style.italic or false,
+		underline = style and style.underline or false,
+	})
 end
 
 vim.cmd("highlight clear")
@@ -47,6 +47,7 @@ set_hl("Statement", Keyword)
 set_hl("Conditional", Keyword)
 set_hl("Repeat", Keyword)
 set_hl("Constant", Constant)
+set_hl("PreProc", Constant)
 
 -- set_hl("Operator", Punctuation)
 -- set_hl("TSOperator", Punctuation)
