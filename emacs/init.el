@@ -5,6 +5,8 @@
 (set-fringe-mode 10)
 (menu-bar-mode -1)
 (setq visible-bell t)
+(setq tags-revert-without-query 1)
+
 
 ; backup files
 (defvar my-backup-dir (expand-file-name "~/.emacs.d/backups/"))
@@ -125,7 +127,9 @@
 :init (marginalia-mode))
 
 (use-package wgrep
-  :ensure t)
+  :ensure t
+  :config
+  (setq wgrep-auto-save-buffer t))
 
 (use-package consult
   :ensure t
@@ -152,6 +156,12 @@
   :config
   (setq vterm-shell "zsh"))
 
+(use-package markdown-mode
+  :ensure t
+  :mode ("\\.md\\'" . markdown-mode)
+  :init
+  (setq markdown-split-window-direction 'right))
+
 (add-hook 'c-mode-common-hook #'hide-ifdef-mode)
 
 ;quickfix list nav
@@ -159,6 +169,7 @@
   (let ((map (if (boundp 'xref-mode-map) xref-mode-map xref--xref-buffer-mode-map)))
     (define-key map (kbd "C-j") 'xref-next-line)
     (define-key map (kbd "C-k") 'xref-prev-line)
+    (define-key map (kbd "e") 'wgrep-change-to-wgrep-mode)
     (define-key map (kbd "] d") 'quit-window)))
 
 (global-set-key(kbd "M-f") 'find-file)
@@ -171,6 +182,10 @@
                (side . right)
                (slot . 0)
                (window-width . 0.5)))
+
+(require 'ansi-color)
+(add-hook 'compilation-filter-hook 'ansi-color-compilation-filter)
+
 
 ;vertical split xref 
 (add-to-list 'display-buffer-alist
@@ -195,10 +210,11 @@
     "u"  'undo-tree-visualize
     "t"  'vterm
     "l"  'save-buffer
-    "vrn" 'project-query-replace-regexp)
+    "vrn" 'project-query-replace-regexp
+    "fr" 'project-find-regexp)
 
   (general-def 'normal
-    "gd" 'project-find-regexp
+    "gd" 'xref-find-definitions
     "C-p" 'projectile-find-file
     "gc" 'evilnc-comment-or-uncomment-lines
     "C-j" 'next-error
