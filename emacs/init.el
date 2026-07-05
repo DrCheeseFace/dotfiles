@@ -164,6 +164,19 @@
 
 (add-hook 'c-mode-common-hook #'hide-ifdef-mode)
 
+(use-package magit
+  :ensure t
+  :config
+  (setq magit-display-buffer-function #'magit-display-buffer-fullframe-status-v1))
+
+(use-package dumb-jump
+  :ensure t
+  :custom
+  (dumb-jump-prefer-searcher 'rg)
+  (xref-show-definitions-function #'consult-xref)
+  :config
+  (add-hook 'xref-backend-functions #'dumb-jump-xref-activate))
+
 ;quickfix list nav
 (with-eval-after-load 'xref
   (let ((map (if (boundp 'xref-mode-map) xref-mode-map xref--xref-buffer-mode-map)))
@@ -185,6 +198,14 @@
 
 (require 'ansi-color)
 (add-hook 'compilation-filter-hook 'ansi-color-compilation-filter)
+
+(defun my/close-side-windows ()
+  "close compilation and xref windows from anywhere."
+  (interactive)
+  (dolist (buf '("*compilation*" "*xref*" "*grep*"))
+    (let ((win (get-buffer-window buf)))
+      (when win (delete-window win)))))
+
 
 
 ;vertical split xref 
@@ -210,7 +231,7 @@
     "u"  'undo-tree-visualize
     "t"  'vterm
     "l"  'save-buffer
-    "vrn" 'project-query-replace-regexp
+    "vrn" 'projectile-replace-regexp
     "fr" 'project-find-regexp)
 
   (general-def 'normal
@@ -218,7 +239,8 @@
     "C-p" 'projectile-find-file
     "gc" 'evilnc-comment-or-uncomment-lines
     "C-j" 'next-error
-    "C-k" 'previous-error)
+    "C-k" 'previous-error
+    "] d" 'my/close-side-windows)
 
   (general-def 'visual
     "J" 'move-text-down
