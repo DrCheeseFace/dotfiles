@@ -102,6 +102,9 @@
 :config
 (evil-collection-init))
 
+(setq echo-keystrokes 0.01)
+(setq evil-esc-delay 0.01)
+
 (use-package evil-nerd-commenter)
 
 (use-package move-text
@@ -150,6 +153,25 @@
   (corfu-auto-delay 0.1)
   (corfu-auto-prefix 2)
   :bind (:map corfu-map ("C-l" . corfu-insert)))
+
+(use-package cape
+  :ensure t
+  :init
+  (add-to-list 'completion-at-point-functions #'cape-file)
+  (add-to-list 'completion-at-point-functions #'cape-keyword)
+  (setq dabbrev-friend-buffer-function #'always)
+  (add-to-list 'completion-at-point-functions #'cape-dabbrev))
+
+(defun my/load-project-files ()
+  "Open all .c and .h files in the current project into buffers."
+  (interactive)
+  (let ((root (projectile-project-root)))
+    (when root
+      (let ((files (projectile-project-files root)))
+        (dolist (file files)
+          (when (string-match-p "\\.[ch]$" file)
+            (find-file-noselect (expand-file-name file root))))
+        (message "Project files loaded into buffers.")))))
 
 (use-package vterm
   :ensure t
@@ -246,6 +268,84 @@
     "J" 'move-text-down
     "K" 'move-text-up)
 )
+
+;; org
+(require 'org)
+(require 'org-habit)
+(add-to-list 'org-modules 'org-habit t)
+
+(setq org-startup-indented t)
+(setq org-hide-leading-stars t)
+(setq org-ellipsis " ▾")
+(setq org-hide-emphasis-markers t)
+(setq org-agenda-files '("~/org/projects.org"
+                         "~/org/tracking.org"))
+
+(setq org-todo-keywords
+      '((sequence "TODO(t)" "INPROGRESS(i)" "NEXT(n)" "PROJ(p)" "|" "DONE(d!)" "CANCELED(c@)")))
+(setq org-todo-keyword-faces
+      '(("TODO"  . "orange")
+        ("INPROGRESS" . "yellow")
+        ("NEXT"  . "cyan")
+        ("PROJ"  . "magenta")
+        ("DONE"  . "green")
+        ("CANCELED" . "gray")))
+
+(setq org-habit-graph-column 60)
+(setq org-habit-show-habits-only-for-today t)
+(setq org-agenda-repeating-timestamp-show-all nil)
+
+(setq org-log-into-drawer "LOGBOOK")
+
+(add-hook 'org-mode-hook
+          (lambda ()
+            (add-hook 'before-save-hook 'org-update-all-dblocks nil 'local)))
+
+(global-set-key (kbd "C-c a") 'org-agenda)
+
+(defun my/org-clock-in-to-inprogress ()
+  "Switch task to INPROGRESS when clocking in if the task is TODO or NEXT."
+  (when (member (org-get-todo-state) '("TODO" "NEXT"))
+    (org-todo "INPROGRESS")))
+
+(add-hook 'org-clock-in-hook 'my/org-clock-in-to-inprogress)
+
+(use-package org-modern
+  :ensure t
+  :config
+  (global-org-modern-mode)
+  (setq org-modern-star ["•" "•" "•" "•" "•"])
+  (setq org-modern-table nil))
+
+(use-package org-super-agenda
+  :ensure t
+  :config
+  (org-super-agenda-mode)
+  (setq org-super-agenda-groups
+        '((:name "Habit Tracker"
+                 :habit t)
+          (:name "Today's Focus"
+                 :time-grid t
+                 :todo "TODO")
+          (:name "In Progress"
+                 :todo "INPROGRESS")
+          (:name "Next Steps"
+                 :todo "NEXT")
+          (:name "Projects"
+                 :todo "PROJ"))))
+
+(add-hook 'org-mode-hook (lambda () (org-hide-drawer-all)))
+
+(with-eval-after-load 'org
+  (set-face-attribute 'org-level-1 nil :foreground "#FFFFFF" :weight 'bold :height 1.2)
+  (set-face-attribute 'org-level-2 nil :foreground "#FFFFFF" :weight 'bold)
+  (set-face-attribute 'org-level-3 nil :foreground "#FFFFFF" :weight 'bold)
+  (set-face-attribute 'org-level-4 nil :foreground "#FFFFFF" :weight 'bold)
+  (set-face-attribute 'org-level-5 nil :foreground "#FFFFFF" :weight 'bold)
+  (set-face-attribute 'org-level-6 nil :foreground "#FFFFFF" :weight 'normal)
+  (set-face-attribute 'org-level-7 nil :foreground "#FFFFFF" :weight 'normal)
+  (set-face-attribute 'org-level-8 nil :foreground "#FFFFFF" :weight 'normal)
+  (set-face-attribute 'org-headline-done nil :foreground "#666666" :strike-through nil))
 
 ;theme 
 (deftheme aesthetics
