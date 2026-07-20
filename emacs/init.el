@@ -145,6 +145,8 @@
   :config
   (setq projectile-completion-system 'default))
 
+(global-set-key (kbd "M-!") 'projectile-run-shell-command-in-root)
+
 (use-package corfu
   :init
   (global-corfu-mode)
@@ -269,7 +271,23 @@
     "K" 'move-text-up)
 )
 
-;; org
+(use-package elfeed
+:ensure t)
+
+(setq elfeed-feeds '(
+	("https://news.ycombinator.com/rss" hackernews)
+
+	("https://www.thecrazyprogrammer.com/feed" the-crazy-programmer)
+
+	("https://www.reddit.com/r/ProgrammerHumor.rss?feed=b5bfe0dca93d4cf04bd999d67ef4fc32e0293420&user=DrCheeseFace" reddit-programming-humor)
+	("https://www.reddit.com/r/cprogramming.rss?feed=b5bfe0dca93d4cf04bd999d67ef4fc32e0293420&user=DrCheeseFace" reddit-cprogramming)
+	("https://www.reddit.com/r/wallstreetbets.rss?feed=b5bfe0dca93d4cf04bd999d67ef4fc32e0293420&user=DrCheeseFace" reddit-wsb)
+	("https://www.reddit.com/r/Grapplerbaki.rss?feed=b5bfe0dca93d4cf04bd999d67ef4fc32e0293420&user=DrCheeseFace" reddit-grapplerbaki)))
+
+(setq-default elfeed-search-filter "@1week +unread")
+(setq elfeed-curl-max-connections 2)
+
+;; org 
 (require 'org)
 (require 'org-habit)
 (add-to-list 'org-modules 'org-habit t)
@@ -278,22 +296,16 @@
 (setq org-hide-leading-stars t)
 (setq org-ellipsis " ▾")
 (setq org-hide-emphasis-markers t)
-(setq org-agenda-files '("~/org/projects.org"
+(setq org-agenda-files '("~/org/projects.org" 
                          "~/org/tracking.org"))
 
 (setq org-todo-keywords
       '((sequence "TODO(t)" "INPROGRESS(i)" "NEXT(n)" "PROJ(p)" "|" "DONE(d!)" "CANCELED(c@)")))
-(setq org-todo-keyword-faces
-      '(("TODO"  . "orange")
-        ("INPROGRESS" . "yellow")
-        ("NEXT"  . "cyan")
-        ("PROJ"  . "magenta")
-        ("DONE"  . "green")
-        ("CANCELED" . "gray")))
 
 (setq org-habit-graph-column 60)
 (setq org-habit-show-habits-only-for-today t)
 (setq org-agenda-repeating-timestamp-show-all nil)
+(setq org-agenda-skip-scheduled-if-done t)
 
 (setq org-log-into-drawer "LOGBOOK")
 
@@ -315,7 +327,15 @@
   :config
   (global-org-modern-mode)
   (setq org-modern-star ["•" "•" "•" "•" "•"])
-  (setq org-modern-table nil))
+  (setq org-modern-table nil)
+  (setq org-modern-todo-faces
+        '(("TODO"       . (:background "orange" :foreground "black"))
+          ("INPROGRESS" . (:background "yellow" :foreground "black"))
+          ("NEXT"       . (:background "cyan" :foreground "black"))
+          ("PROJ"       . (:background "magenta" :foreground "black"))
+          ("DONE"       . (:background "green" :foreground "black"))
+          ("CANCELED"   . (:background "gray" :foreground "black"))))
+  )
 
 (use-package org-super-agenda
   :ensure t
@@ -375,12 +395,13 @@
    `(font-lock-function-name-face ((t (:foreground ,normal-fg))))
    `(font-lock-variable-name-face ((t (:foreground ,normal-fg))))
    `(font-lock-warning-face ((t (:foreground "red" :weight bold))))
-   
+
    `(tooltip ((t (:background ,float-bg :foreground ,normal-fg))))
    `(company-tooltip ((t (:background ,float-bg :foreground ,normal-fg))))
    
    `(mode-line ((t (:background "#2e2e2e" :foreground ,normal-fg))))
-   `(mode-line-inactive ((t (:background "#1a1a1a" :foreground "#888888")))))
+   `(mode-line-inactive ((t (:background "#1a1a1a" :foreground "#888888"))))
+   )
 
 (and load-file-name
      (boundp 'custom-theme-load-path)
@@ -393,6 +414,18 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(elfeed-feeds
+   '("https://www.reddit.com/r/Grapplerbaki.rss?feed=b5bfe0dca93d4cf04bd999d67ef4fc32e0293420&user=DrCheeseFace"
+     ("https://news.ycombinator.com/rss" hackernews)
+     ("https://www.thecrazyprogrammer.com/feed" the-crazy-programmer)
+     ("https://www.reddit.com/r/ProgrammerHumor.rss?feed=b5bfe0dca93d4cf04bd999d67ef4fc32e0293420&user=DrCheeseFace"
+      reddit-programming-humor)
+     ("https://www.reddit.com/r/cprogramming.rss?feed=b5bfe0dca93d4cf04bd999d67ef4fc32e0293420&user=DrCheeseFace"
+      reddit-cprogramming)
+     ("https://www.reddit.com/r/wallstreetbets.rss?feed=b5bfe0dca93d4cf04bd999d67ef4fc32e0293420&user=DrCheeseFace"
+      reddit-wsb)
+     ("https://www.reddit.com/r/Grapplerbaki.rss?feed=b5bfe0dca93d4cf04bd999d67ef4fc32e0293420&user=DrCheeseFace"
+      reddit-grapplerbaki)))
  '(package-selected-packages nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
