@@ -27,11 +27,10 @@
 (setq undo-outer-limit 100000000) 
 
 (add-to-list 'default-frame-alist
-             '(font . "Liberation Mono-18"))
+             '(font . "Liberation Mono-14"))
 
 (set-face-attribute 'default t
-                    :font "Liberation Mono-18"
-            :height 180
+                    :font "Liberation Mono-14"
                     :weight 'normal
                     :slant 'normal)
 
@@ -120,11 +119,16 @@
   (setq orderless-matching-styles '(orderless-literal orderless-regexp orderless-flex)))
 
 (use-package vertico
-:init (vertico-mode)
-:bind (:map vertico-map
-        ("C-j" . vertico-next)
-        ("C-k" . vertico-previous)
-        ("C-l" . vertico-insert)))
+  :init (vertico-mode)
+  :config
+  (setq vertico-multiform-commands
+        '((find-file flat)
+          (projectile-find-file flat)))
+  (vertico-multiform-mode)
+  :bind (:map vertico-map
+         ("C-j" . vertico-next)
+         ("C-k" . vertico-previous)
+         ("C-l" . vertico-insert)))
 
 (use-package marginalia
 :init (marginalia-mode))
@@ -376,7 +380,7 @@
       (comment "yellow")
       (string "orange")
       (normal-fg "#FFFFFF")
-      (normal-bg "#000900")
+      (normal-bg "#062625")
       (float-bg "#1e1e1e"))
 
   (custom-theme-set-faces
@@ -409,6 +413,7 @@
                   (file-name-directory load-file-name))))
 
 (enable-theme 'aesthetics)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -426,7 +431,12 @@
       reddit-wsb)
      ("https://www.reddit.com/r/Grapplerbaki.rss?feed=b5bfe0dca93d4cf04bd999d67ef4fc32e0293420&user=DrCheeseFace"
       reddit-grapplerbaki)))
- '(package-selected-packages nil))
+ '(package-selected-packages
+   '(cape clang-format company consult corfu dumb-jump eldoc-box elfeed
+	  evil-collection evil-nerd-commenter evil-surround general
+	  gruber-darker-theme harpoon magit marginalia markdown-mode move-text
+	  multi-vterm multiple-cursors orderless org-modern org-super-agenda
+	  org-tree-slide projectile undo-tree vertico wgrep-ag xcscope)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
